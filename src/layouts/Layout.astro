@@ -1,0 +1,33 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="/imagens/logo.png" alt="Logo Jurema, Estrada e Mar" class="logo" />
+      <nav>
+        <a href="/">Início</a>
+        <a href="/oracoes">Orações</a>
+        <a href="/pontos">Pontos Cantados</a>
+        <a href="/ensinamentos">Ensinamentos</a>
+        <a href="/sobre">Sobre</a>
+      </nav>
+    </header>
+
+    <slot />
+
+    <footer class="rodape">
+      <p>Com axé e acolhimento, por <strong>Jurema, Estrada e Mar</strong></p>
+    </footer>
+  </body>
+</html>
