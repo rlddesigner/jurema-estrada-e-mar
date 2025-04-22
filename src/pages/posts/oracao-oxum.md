@@ -3,6 +3,7 @@ title: "Oração para Oxum"
 pubDate: "2025-04-22"
 image: "/imagens/oracao-oxum.jpg"
 description: "Uma prece para momentos de fragilidade, buscando o acolhimento das águas doces de Mãe Oxum."
+categoria: "oração"
 ---
 
 Mãe Oxum,  
