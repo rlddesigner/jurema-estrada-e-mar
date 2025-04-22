@@ -12,7 +12,9 @@ header {
 }
 .logo {
     width: 120px;
-    margin-bottom: 1rem;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 nav {
     margin-top: 1rem;
