@@ -8,6 +8,5 @@
   },
   "dependencies": {
     "astro": "^4.5.7",
-    "@astrojs/content": "^0.18.3"
   }
 }
