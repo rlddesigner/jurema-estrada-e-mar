@@ -3,13 +3,55 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Início" 
-  description="Bem-vinde ao nosso espaço espiritual guiado pela força da Umbanda. Aqui você encontra orações, ensinamentos e axé."
+  title="Início"
+  description="Bem-vinde ao Jurema, Estrada e Mar – um espaço espiritual com orações, pontos cantados e ensinamentos guiados por luz e axé."
 >
-  <main>
-    <p>Bem-vinde ao nosso espaço espiritual 🌿</p>
-  </main>
-</Layout>
-  </main>
-</Layout>
+  <main class="inicio">
+    <!-- 🌼 Saudação espiritual -->
+    <section class="saudacao">
+      <h1>Jurema, Estrada e Mar</h1>
+      <p>
+        Aqui a palavra é cura. O canto é oração.<br/>
+        O axé é luz. Seja bem-vinde ao nosso espaço de fé, sabedoria ancestral e acolhimento espiritual.
+      </p>
+    </section>
 
+    <!-- 🌿 Últimas Orações -->
+    <section class="secao-home">
+      <h2>🕊️ Últimas Orações</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="/imagens/oracao-oxum.jpg" alt="Oração para Oxum" />
+          <h3>Oração para Oxum</h3>
+          <p>Uma prece para momentos de fragilidade, guiada pela força das águas doces.</p>
+          <a class="botao" href="/oracoes/oracao-oxum">Ler oração</a>
+        </div>
+
+        <!-- Exemplo adicional -->
+        <!--
+        <div class="card">
+          <img src="/imagens/oracao-iemanja.jpg" alt="Oração para Iemanjá" />
+          <h3>Oração para Iemanjá</h3>
+          <p>Uma oração para se conectar com a força do mar e da mãe ancestral.</p>
+          <a class="botao" href="/oracoes/oracao-iemanja">Ler oração</a>
+        </div>
+        -->
+      </div>
+      <a class="ver-todas" href="/oracoes">Ver todas as orações</a>
+    </section>
+
+    <!-- 🎶 Pontos Cantados -->
+    <section class="secao-home">
+      <h2>🎶 Pontos Cantados</h2>
+      <p>Em breve você encontrará aqui cantos de fé que vibram com a força dos guias da Umbanda.</p>
+      <a class="ver-todas" href="/pontos">Ir para os pontos</a>
+    </section>
+
+    <!-- 📘 Ensinamentos -->
+    <section class="secao-home">
+      <h2>📘 Ensinamentos Espirituais</h2>
+      <p>Reflexões e fundamentos recebidos da espiritualidade. Em breve!</p>
+      <a class="ver-todas" href="/ensinamentos">Ver ensinamentos</a>
+    </section>
+  </main>
+</Layout>
