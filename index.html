@@ -33,8 +33,13 @@
             <p>Um espaço de acolhimento, luz e partilha espiritual, inspirado na força da Jurema, nos caminhos abertos e nas águas sagradas do mar.</p>
         </section>
     </main>
-    <footer>
-        <p>Com axé — Jurema, Estrada e Mar © 2024</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
 </body>
 </html>
