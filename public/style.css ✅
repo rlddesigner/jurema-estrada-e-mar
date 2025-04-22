@@ -1,0 +1,27 @@
+body {
+  background: #fdf8f2;
+  color: #4a3b2c;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Marcellus', serif;
+  color: #b58f4b;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #b88755;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
