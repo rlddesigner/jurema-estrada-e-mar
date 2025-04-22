@@ -131,3 +131,8 @@ footer {
   border-top: 1px solid #e8dfd6;
   font-size: 0.9rem;
 }
+.botao.desativado {
+  background: #e0d1b2;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
