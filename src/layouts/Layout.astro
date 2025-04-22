@@ -6,6 +6,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <slot />
+    <header class="cabecalho">
+      <img src="/imagens/logo.png" alt="Logo Jurema, Estrada e Mar" class="logo" />
+      <nav>
+        <a href="/">Início</a>
+        <a href="/oracoes">Orações</a>
+        <a href="/pontos">Pontos Cantados</a>
+        <a href="/ensinamentos">Ensinamentos</a>
+        <a href="/sobre">Sobre</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
