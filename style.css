@@ -1,30 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Open+Sans&display=swap');
+
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #fcfaf7;
-    color: #3e3225;
+    font-family: 'Open Sans', sans-serif;
+    background: #fefcf8;
+    color: #6e4f30;
     margin: 0;
     padding: 0;
 }
+
 header {
     text-align: center;
     padding: 2rem 1rem 1rem 1rem;
-    background: #efe6dc;
+    background: #f6f2eb;
 }
+
 .logo {
     width: 120px;
     height: auto;
     display: block;
     margin: 0 auto 1rem auto;
 }
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #6e4f30;
+    margin: 0.5rem 0;
+}
+
 nav {
     margin-top: 1rem;
 }
+
 nav a {
     text-decoration: none;
-    color: #684621;
+    color: #6e4f30;
     margin: 0 1rem;
     font-weight: bold;
 }
+
 main {
     max-width: 700px;
     margin: 2rem auto;
@@ -33,14 +47,16 @@ main {
     box-shadow: 0 2px 8px #e8dfd6;
     padding: 2rem;
 }
-h1, h2 {
-    color: #b8995a;
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #c7a557;
 }
+
 footer {
     text-align: center;
     padding: 1rem;
-    background: #efe6dc;
-    color: #684621;
+    background: #f6f2eb;
+    color: #6e4f30;
     border-top: 1px solid #e8dfd6;
-    margin-top: 2rem;
-}
+    margin
