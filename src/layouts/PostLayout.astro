@@ -48,6 +48,9 @@ const { title, image, estilo = "" } = Astro.props;
   <img src="/imagens/folha3.png" class="folha folha6" />
 </div>
 
+{Astro.props.estilo === "folhas-caindo" && (
+  <script type="module" src="/folhas.js"></script>
+)}
 
   </body>
 </html>
