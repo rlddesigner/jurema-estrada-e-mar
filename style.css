@@ -21,9 +21,11 @@ header {
   background-image: url("imagens/folhas-verdes-cabecalho.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
   background-blend-mode: multiply;
+  background-attachment: scroll;
 }
+
 
 .header-container {
   display: flex;
