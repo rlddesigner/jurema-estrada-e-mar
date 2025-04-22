@@ -67,33 +67,59 @@ nav a {
 }
 
 /* 📦 Conteúdo principal */
-main {
-  max-width: 720px;
-  margin: 3rem auto;
-  background: #fffefc;
+/* Seções gerais */
+main section {
+  margin-bottom: 3rem;
   padding: 2rem;
+  background: #fffefc;
   border-radius: 1rem;
-  box-shadow: 0 3px 10px rgba(193, 176, 149, 0.2);
+  box-shadow: 0 2px 6px rgba(215, 194, 164, 0.2);
 }
 
-h1, h2 {
-   font-family: 'Marcellus', serif;
-  color: #c69c6d;
+h2, h3 {
+  font-family: 'Marcellus', serif;
+  color: #b58f4b;
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 2.4rem;
-  text-align: center;
+p, li, blockquote {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #4a3b2c;
 }
 
-h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
+blockquote {
+  font-style: italic;
+  background: #fff7ea;
+  padding: 1rem;
+  border-left: 4px solid #d9b87c;
+  border-radius: 0.5rem;
 }
 
-p {
-  margin-bottom: 1rem;
+/* Botão */
+.botao {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #c69c6d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background: #b88755;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
 }
 
 /* 🌙 Rodapé */
