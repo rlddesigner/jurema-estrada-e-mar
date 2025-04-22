@@ -39,5 +39,9 @@ const { title, image, estilo = "" } = Astro.props;
   </div>
 </footer>
 
+{estilo === "folhas-caindo" && (
+  <script type="module" src="/folhas.js"></script>
+)}
+
   </body>
 </html>
