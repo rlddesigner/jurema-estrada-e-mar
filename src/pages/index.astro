@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const oracoes = await getCollection('oracoes');
+const ultimasOracoes = oracoes.slice(0, 3);
+---
+
+<BaseLayout title="Início">
+  <section class="boas-vindas">
+    <h2>Seja bem-vinde ao nosso espaço espiritual 🌿</h2>
+  </section>
+
+  <section class="secao-home">
+    <h3>🕊️ Últimas Orações</h3>
+    <div class="cards-grid">
+      {ultimasOracoes.map((post) => (
+        <a href={`/oracoes/${post.slug}/`} class="card">
+          <img src={post.data.image} alt={post.data.title} />
+          <h4>{post.data.title}</h4>
+          <p>{post.data.descricao}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
