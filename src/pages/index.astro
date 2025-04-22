@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import posts from "../utils/getPosts";
+---
+
+<Layout>
+  <main>
+    <h1>Jurema, Estrada e Mar</h1>
+    <p>Bem-vinde! Aqui compartilhamos orações, pontos e ensinamentos espirituais.</p>
+
+    <h2>Últimas Publicações</h2>
+    <ul>
+      {posts.map(post => (
+        <li><a href={post.url}>{post.frontmatter.title}</a></li>
+      ))}
+    </ul>
+  </main>
+</Layout>
