@@ -25,3 +25,32 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.cabecalho {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 2px solid #e4d3b2;
+  background-color: #fff7ea;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #6e4f30;
+  font-weight: bold;
+  font-family: 'Marcellus', serif;
+}
+
+nav a:hover {
+  color: #b58f4b;
+}
+
