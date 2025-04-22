@@ -1,28 +1,45 @@
 ---
-import { getCollection } from "astro:content";
-const posts = await getCollection("posts");
+import { Markdown } from 'astro/components';
 
-const oracoes = posts
-  .filter(p => p.data.categoria === "oração")
-  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+const posts = await import.meta.glob('../../posts/*.md', { eager: true });
+const lista = Object.values(posts)
+  .map((mod: any) => ({
+    ...mod.frontmatter,
+    url: '/posts/' + mod.url.split('/').pop().replace('.md', ''),
+  }))
+  .sort((a, b) => (b.date ?? 0) - (a.date ?? 0))
   .slice(0, 3);
 ---
 
-<Layout>
-  <main>
-    <p class="boas-vindas">Seja bem-vinde ao nosso espaço espiritual 🌿</p>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jurema, Estrada e Mar</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="/imagens/logo.png" alt="Logo Jurema, Estrada e Mar" class="logo" />
+      <nav>
+        <a href="/">Início</a>
+        <a href="/oracoes">Orações</a>
+        <a href="/pontos">Pontos Cantados</a>
+        <a href="/ensinamentos">Ensinamentos</a>
+        <a href="/sobre">Sobre</a>
+      </nav>
+    </header>
 
-    <section class="ultimos-posts">
-      <h2>🕊️ Últimas Orações</h2>
-      <div class="posts-list">
-        {oracoes.map(post => (
-  <article class="post-card">
-    <img src={post.data.image} alt={post.data.title} />
-    <h3><a href={`/posts/${post.slug}`}>{post.data.title}</a></h3>
-    <p>{post.data.description}</p>
-  </article>
-))}
-      </div>
-    </section>
-  </main>
-</Layout>
+    <main class="inicio">
+      <h2>🌼 Últimas Orações</h2>
+      <section class="cards">
+        {lista.map(post => (
+          <a href={post.url} class="card">
+            {post.image && <img src={post.image} alt={post.title} />}
+            <h3>{post.title}</h3>
+            <p>{post.description}</p>
+          </a>
+        ))}
+      </section>
+    </main>
+  </body>
+</html>
