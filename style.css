@@ -136,3 +136,29 @@ footer {
   cursor: not-allowed;
   opacity: 0.7;
 }
+.centralizado {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralizado ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+main section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fffefc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(215, 194, 164, 0.2);
+}
+
+.botao.desativado {
+  background: #e0d1b2;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
