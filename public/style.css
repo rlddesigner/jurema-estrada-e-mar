@@ -1,0 +1,50 @@
+body {
+  background: #fdf8f2;
+  color: #4a3b2c;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Marcellus', serif;
+  color: #b58f4b;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  background: #fff7eb;
+  border-bottom: 1px solid #e0cba6;
+}
+
+.cabecalho nav a {
+  margin: 0 1rem;
+  color: #6b4e3d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  max-height: 70px;
+  margin-bottom: 1rem;
+}
+
+.rodape {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  background: #fff7eb;
+  color: #a18965;
+  border-top: 1px solid #e0cba6;
+}
