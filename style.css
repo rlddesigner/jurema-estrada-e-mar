@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Open+Sans&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background: #fefcf8;
-    color: #6e4f30;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #4a3b2c;
+    background: radial-gradient(circle at top left, #fdfaf5, #f6f2eb);
+    background-attachment: fixed;
 }
 
 header {
+    position: relative;
     text-align: center;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 2rem;
     background: #f6f2eb;
+    overflow: hidden;
+    border-bottom: 2px solid #e0d6c6;
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
     height: auto;
     display: block;
     margin: 0 auto 1rem auto;
@@ -23,13 +27,13 @@ header {
 
 h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
-    color: #6e4f30;
+    font-size: 2.8rem;
     margin: 0.5rem 0;
+    color: #6e4f30;
 }
 
 nav {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 nav a {
@@ -37,20 +41,23 @@ nav a {
     color: #6e4f30;
     margin: 0 1rem;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 main {
-    max-width: 700px;
-    margin: 2rem auto;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px #e8dfd6;
+    max-width: 760px;
+    margin: 3rem auto;
+    background: #fffefc;
     padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(193, 176, 149, 0.2);
 }
 
 h2 {
     font-family: 'Cormorant Garamond', serif;
-    color: #c7a557;
+    color: #b58f4b;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -59,4 +66,29 @@ footer {
     background: #f6f2eb;
     color: #6e4f30;
     border-top: 1px solid #e8dfd6;
-    margin
+    margin-top: 2rem;
+}
+
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.15;
+}
+
+header::before {
+    top: 10px;
+    left: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="green" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C10.1 7.6 7.1 10.6 2 12c5.1 1.4 8.1 4.4 10 10 1.9-5.6 4.9-8.6 10-10-5.1-1.4-8.1-4.4-10-10z"/></svg>');
+}
+
+header::after {
+    top: 10px;
+    right: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="green" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C10.1 7.6 7.1 10.6 2 12c5.1 1.4 8.1 4.4 10 10 1.9-5.6 4.9-8.6 10-10-5.1-1.4-8.1-4.4-10-10z"/></svg>');
+    transform: scaleX(-1);
+}
