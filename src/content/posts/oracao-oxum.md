@@ -30,3 +30,14 @@ Com tua presença, me guia.
 
 Ora ieiê ô!  
 Axé!
+
+---
+import { Markdown } from 'astro/components';
+import PostLayout from '../../layouts/PostLayout.astro';
+import oracao from '../../posts/oracao-oxum.md';
+---
+
+<PostLayout {...oracao.frontmatter}>
+  <Markdown content={oracao.content} />
+</PostLayout>
+
