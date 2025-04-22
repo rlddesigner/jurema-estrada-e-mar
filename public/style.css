@@ -60,7 +60,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .card {
@@ -70,6 +70,9 @@ main {
   text-align: center;
   box-shadow: 0 2px 8px rgba(210, 180, 140, 0.2);
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -86,8 +89,13 @@ main {
 
 .card h3 {
   font-family: 'Marcellus', serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #a87440;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #6a4f3b;
 }
 
 .botao, .ver-todas {
