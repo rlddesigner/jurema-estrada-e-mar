@@ -1,11 +1,21 @@
-header {
-    position: relative;
-    text-align: center;
-    padding: 2rem 1rem 2rem;
-    background: #f6f2eb;
-    overflow: hidden;
-    border-bottom: 2px solid #e0d6c6;
+/* 🌿 Folhinhas no fundo do header */
+header .leaf {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='green' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2C10.1 7.6 7.1 10.6 2 12c5.1 1.4 8.1 4.4 10 10 1.9-5.6 4.9-8.6 10-10-5.1-1.4-8.1-4.4-10-10z'/></svg>");
+  opacity: 0.07;
+  z-index: 0;
 }
+
+/* Diferentes posições e rotações para dar aleatoriedade */
+.leaf1 { top: 10px; left: 20px; transform: rotate(10deg); }
+.leaf2 { top: 50px; right: 30px; transform: rotate(-20deg); }
+.leaf3 { bottom: 20px; left: 60px; transform: rotate(30deg); }
+.leaf4 { bottom: 10px; right: 50px; transform: rotate(-15deg); }
+
 
 .logo {
     width: 300px;
