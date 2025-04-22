@@ -143,5 +143,18 @@ nav a:hover {
     background-position: 0 600px, 100px 650px, 200px 700px;
   }
 }
+.rodape {
+  background-color: #fff3de;
+  border-top: 1px solid #e6d3ae;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: #6e4f30;
+}
+
+.rodape-interno p {
+  margin: 0.2rem 0;
+}
 
 
