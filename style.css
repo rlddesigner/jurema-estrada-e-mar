@@ -18,21 +18,16 @@ body {
 
 /* 🌸 Cabeçalho */
 header {
-  background-image: url("imagens/folhas-verdes-cabecalho.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-  background-blend-mode: multiply;
-  background-attachment: scroll;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: #f6f2eb;
+  border-bottom: 2px solid #e0d6c6;
 }
-
 
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  z-index: 1;
 }
 
 .logo {
@@ -58,23 +53,6 @@ nav a {
 nav a:hover {
   color: #b58f4b;
 }
-
-/* 🍃 Folhinhas */
-.leaf {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='green' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2C10.1 7.6 7.1 10.6 2 12c5.1 1.4 8.1 4.4 10 10 1.9-5.6 4.9-8.6 10-10-5.1-1.4-8.1-4.4-10-10z'/></svg>");
-  opacity: 0.07;
-  z-index: 1;
-}
-
-.leaf1 { top: 10px; left: 20px; transform: rotate(20deg); }
-.leaf2 { top: 30px; right: 30px; transform: rotate(-15deg); }
-.leaf3 { bottom: 10px; left: 40px; transform: rotate(30deg); }
-.leaf4 { bottom: 20px; right: 50px; transform: rotate(-25deg); }
 
 /* 📦 Conteúdo principal */
 main {
