@@ -100,5 +100,47 @@ nav a:hover {
   font-size: 0.95rem;
   color: #6a4f3b;
 }
+/* Estilo base da página */
+.pagina-oracao {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fffefc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(215, 194, 164, 0.2);
+  position: relative;
+}
+
+/* Capa */
+.capa-oracao {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Efeito de folhas douradas */
+.folhas-douradas::before,
+.folhas-douradas::after {
+  content: '🍂 🍃 🍂';
+  font-size: 2rem;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  opacity: 0.1;
+  animation: cair 10s infinite linear;
+}
+
+.folhas-douradas::after {
+  content: '💛 💛 💛';
+  top: auto;
+  bottom: -20px;
+  right: 20px;
+  animation: cair 12s infinite linear reverse;
+}
+
+@keyframes cair {
+  0% { transform: translateY(0); opacity: 0.1; }
+  100% { transform: translateY(50px); opacity: 0.2; }
+}
 
 
