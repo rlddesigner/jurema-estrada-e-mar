@@ -1,9 +1,13 @@
 ---
-export interface Props {
+import type { Props } from 'astro:content';
+
+export interface Frontmatter {
   title: string;
+  description?: string;
   image?: string;
   estilo?: string;
 }
+
 const { title, image, estilo = "" } = Astro.props;
 ---
 
@@ -45,9 +49,6 @@ const { title, image, estilo = "" } = Astro.props;
           <img src="/imagens/folha1.png" class="folha folha1" />
           <img src="/imagens/folha2.png" class="folha folha2" />
           <img src="/imagens/folha3.png" class="folha folha3" />
-          <img src="/imagens/folha1.png" class="folha folha4" />
-          <img src="/imagens/folha2.png" class="folha folha5" />
-          <img src="/imagens/folha3.png" class="folha folha6" />
         </div>
         <script type="module" src="/folhas.js"></script>
       </>
