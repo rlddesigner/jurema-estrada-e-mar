@@ -1,14 +1,27 @@
 ---
 export interface Props {
   title: string;
+  description?: string;
 }
-const { title } = Astro.props;
+const { title, description = "Espaço de luz, orações, pontos cantados e ensinamentos guiados por fé e axé." } = Astro.props;
 ---
 
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>{title}</title>
+    <title>{title} | Jurema, Estrada e Mar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="umbanda, orações, pontos cantados, espiritualidade, oxum, exu, jurema, marabô" />
+    <meta name="author" content="Jurema, Estrada e Mar" />
+
+    <!-- Open Graph (compartilhamento bonito) -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/imagens/logo.png" />
+    <meta property="og:url" content="https://juremaestradaemar.netlify.app/" />
+
     <link rel="stylesheet" href="/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
   </head>
