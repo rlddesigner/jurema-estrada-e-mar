@@ -21,7 +21,6 @@ header {
   text-align: center;
   padding: 3rem 1rem 2rem;
   background: #fff7ea; /* creme com toque dourado */
-  border-bottom: 2px solid #e2cfa9;
 }
 
 .header-container {
@@ -78,8 +77,8 @@ main {
 }
 
 h1, h2 {
-  font-family: 'Cormorant Garamond', serif;
-  color: #b58f4b;
+   font-family: 'Marcellus', serif;
+  color: #c69c6d;
   margin-bottom: 1rem;
 }
 
