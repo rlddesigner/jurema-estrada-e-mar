@@ -1,15 +1,27 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const oracoes = await getCollection('oracoes');
+const ordenadas = oracoes.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
-<Layout title="Orações" description="Orações guiadas por fé e axé para os momentos de espiritualidade e acolhimento.">
-  <main>
-    <h1>Orações</h1>
-    <p>Aqui você encontra orações para conexão, fortalecimento e luz.</p>
+<Layout 
+  title="Orações"
+  description="Conecte-se com a espiritualidade através de orações guiadas por fé e axé, inspiradas pelos guias e entidades da Umbanda."
+>
+  <main class="pagina-lista">
+    <h1>✨ Orações</h1>
+    <p class="intro">Aqui você encontra orações para momentos de força, acolhimento, cura e conexão espiritual.</p>
 
-    <ul>
-      <li><a href="/posts/oracao-oxum">Oração para Oxum</a></li>
-      <!-- Adicione mais aqui -->
-    </ul>
+    <div class="cards-grid">
+      {ordenadas.map((post) => (
+        <a href={`/oracoes/${post.slug}/`} class="card">
+          <img src={post.data.image} alt={post.data.title} />
+          <h3>{post.data.title}</h3>
+          <p>{post.data.description}</p>
+        </a>
+      ))}
+    </div>
   </main>
 </Layout>
