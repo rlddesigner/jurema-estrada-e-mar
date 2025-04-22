@@ -119,33 +119,47 @@ nav a:hover {
 }
 
 /* Efeito de folhas douradas */
-.folhas-douradas::before {
-  content: "";
-  position: absolute;
+.folhas-caindo {
+  pointer-events: none;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  background-image: 
-    url("/imagens/folha1.png"),
-    url("/imagens/folha2.png"),
-    url("/imagens/folha3.png");
-  background-repeat: repeat;
-  background-size: 50px;
-  animation: cairFolhas 20s linear infinite;
-  opacity: 0.1;
+  overflow: hidden;
+  z-index: 1;
 }
 
-@keyframes cairFolhas {
+.folha {
+  position: absolute;
+  width: 40px;
+  opacity: 0.8;
+  animation-name: cairFolha;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.folha1 { left: 10%; animation-duration: 10s; animation-delay: 0s; }
+.folha2 { left: 30%; animation-duration: 12s; animation-delay: 2s; }
+.folha3 { left: 50%; animation-duration: 9s; animation-delay: 4s; }
+.folha4 { left: 70%; animation-duration: 11s; animation-delay: 1s; }
+.folha5 { left: 85%; animation-duration: 14s; animation-delay: 3s; }
+.folha6 { left: 95%; animation-duration: 13s; animation-delay: 5s; }
+
+@keyframes cairFolha {
   0% {
-    background-position: 0 -200px, 100px -250px, 200px -300px;
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
   }
   100% {
-    background-position: 0 600px, 100px 650px, 200px 700px;
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
   }
 }
+
 
 .rodape {
   background-color: #fff3de;
