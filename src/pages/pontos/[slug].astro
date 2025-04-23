@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getEntryBySlug } from 'astro:content';
+
+const { slug } = Astro.params;
+const ponto = await getEntryBySlug('pontos', slug);
+
+if (!ponto) {
+  throw new Error(`Ponto não encontrado: ${slug}`);
+}
+
+const {
+  data: { title, description },
+  body
+} = ponto;
+
+const { Content } = await ponto.render();
+---
+
+<Layout title={title} description={description}>
+  <main class="pagina-oracao">
+    <h1>{title}</h1>
+    <article class="conteudo-oracao">
+      <Content />
+    </article>
+  </main>
+</Layout>
