@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: null
 title: "Oração para Oxum – Autoestima e Amor-próprio"
 slug: "oracao-oxum-autoestima"
 description: "Uma oração para momentos de insegurança, para fortalecer o amor-próprio sob o brilho e acolhimento de Mãe Oxum."
