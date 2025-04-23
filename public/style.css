@@ -467,14 +467,14 @@ main.pagina-ensinamento article {
   overflow: hidden;
   border-top: 2px solid #e4d1b9;
   border-bottom: 2px solid #e4d1b9;
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin-bottom: 2rem;
 }
 
 .carrossel-inner {
   display: flex;
   width: max-content;
-  animation: deslizar 40s linear infinite;
+  animation: deslizar 120s linear infinite;
   gap: 4rem;
 }
 
