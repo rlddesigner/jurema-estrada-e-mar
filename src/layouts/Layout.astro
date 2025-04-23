@@ -1,56 +1,21 @@
 ---
+import BaseLayout from './BaseLayout.astro';
+
 export interface Props {
   title: string;
   description?: string;
+  estilo?: string;
+  folhas?: boolean;
 }
-const { title, description = "Espaço de luz, orações, pontos cantados e ensinamentos guiados por fé e axé." } = Astro.props;
+
+const {
+  title,
+  description = "Espaço de luz, orações, pontos cantados e ensinamentos guiados por fé e axé.",
+  estilo,
+  folhas
+} = Astro.props;
 ---
 
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{title} | Jurema, Estrada e Mar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
-    <meta name="keywords" content="umbanda, orações, pontos cantados, espiritualidade, oxum, exu, jurema, marabô" />
-    <meta name="author" content="Jurema, Estrada e Mar" />
-
-    <!-- Open Graph (compartilhamento bonito) -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/imagens/logo.png" />
-    <meta property="og:url" content="https://juremaestradaemar.netlify.app/" />
-
-    <link rel="stylesheet" href="/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="cabecalho">
-      <img src="/imagens/logo.png" alt="Logo Jurema, Estrada e Mar" class="logo" />
-      <nav>
-        <a href="/">Início</a>
-        <a href="/oracoes">Orações</a>
-        <a href="/pontos">Pontos Cantados</a>
-        <a href="/ensinamentos">Ensinamentos</a>
-        <a href="/sobre">Sobre</a>
-      </nav>
-    </header>
-
-    <slot />
-
-    <footer class="rodape">
-  <div class="rodape-interno">
-    <p>Com axé e acolhimento, por <strong>Jurema, Estrada e Mar</strong></p>
-    <p>Feito com amor e guiança espiritual ✨</p>
-    <div class="contador-visitas">
-      <a href="https://www.hitwebcounter.com" target="_blank" rel="noopener">
-        <img src="https://hitwebcounter.com/counter/counter.php?page=20448698&style=0007&nbdigits=9&type=page&initCount=0"
-        title="Contador de Visitas" alt="Visit counter For Websites" />
-      </a>
-    </div>
-  </div>
-</footer>
-
-  </body>
-</html>
+<BaseLayout title={title} estilo={estilo} folhas={folhas}>
+  <slot />
+</BaseLayout>
