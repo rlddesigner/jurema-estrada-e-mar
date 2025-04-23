@@ -3,7 +3,7 @@ layout: null
 title: As Três Irmãs Encantadas – Mariana, Herondina e Toya Jarina
 slug: as-tres-irmas-encantadas
 description: Letra e explicação espiritual do ponto cantado para as caboclas encantadas Mariana, Herondina e Toya Jarina.
-pubDate: 2025-04-30
+pubDate: 2025-04-23
 classe: "ponto-encantadas"
 estilo: ""
 seo:
@@ -11,9 +11,9 @@ seo:
   description: Ponto cantado para Mariana, Herondina e Toya Jarina. Conheça sua letra e seu significado espiritual.
 ---
 
-*(> Eram três irmãs da língua ferina  
+> Eram três irmãs da língua ferina  
 > Uma é Mariana, a outra é Herondina  
-> E uma rosa, que é Toya Jarina)*
+> E uma rosa, que é Toya Jarina
 
 ---
 
