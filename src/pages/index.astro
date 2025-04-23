@@ -1,23 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 
-const oracoesRecentes = [
-  {
-    titulo: "Oração para Autoestima com Mamãe Oxum",
-    imagem: "/imagens/oracao-oxum.jpg",
-    link: "/oracoes/oracao-oxum-autoestima"
-  },
-  {
-    titulo: "Oração para Amor com Mamãe Iemanjá",
-    imagem: "/imagens/oracao-iemanja.jpg",
-    link: "/oracoes/oracao-iemanja-amor"
-  },
-  {
-    titulo: "Prece de Força com Xangô",
-    imagem: "/imagens/oracao-xango.jpg",
-    link: "/oracoes/oracao-xango-forca"
-  }
-];
+const oracoes = await getCollection('oracoes');
+
+// Ordena pelas mais recentes usando pubDate
+const oracoesRecentes = oracoes
+  .filter((oracao) => oracao.data.pubDate)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 6); // mostra só as 6 mais recentes
 ---
 
 <Layout 
@@ -34,14 +25,14 @@ const oracoesRecentes = [
       </p>
     </section>
 
-    <!-- 🌿 Últimas Orações -->
+    <!-- 🌿 Últimas Orações (automáticas) -->
     <section class="secao-home ultimas-oracoes">
       <h2>🕊️ Últimas Orações</h2>
       <div class="grade-oracoes">
-        {oracoesRecentes.map((oracao) => (
-          <a href={oracao.link} class="card-oracao">
-            <img src={oracao.imagem} alt={oracao.titulo} />
-            <h3>{oracao.titulo}</h3>
+        {oracoesRecentes.map(({ data }) => (
+          <a href={data.slug ? `/oracoes/${data.slug}` : '#'} class="card-oracao">
+            <img src={data.image} alt={data.title} />
+            <h3>{data.title}</h3>
           </a>
         ))}
       </div>
