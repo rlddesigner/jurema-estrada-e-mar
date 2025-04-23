@@ -2,26 +2,29 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
+// Busca todas as orações e ordena por data (mais recente primeiro)
 const oracoes = await getCollection('oracoes');
-const ordenadas = oracoes.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+
+const oracoesRecentes = oracoes
+  .filter((o) => o.data.pubDate)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
 <Layout 
   title="Orações"
-  description="Conecte-se com a espiritualidade através de orações guiadas por fé e axé, inspiradas pelos guias e entidades da Umbanda."
+  description="Palavras de fé, amor e força espiritual recebidas na gira, guiadas por Oxum, Iansã, Xangô e tantos outros."
 >
   <main class="pagina-lista">
-    <h1>✨ Orações</h1>
-    <p class="intro">Aqui você encontra orações para momentos de força, acolhimento, cura e conexão espiritual.</p>
-
-   <div class="grade-oracoes">
-  {oracoesRecentes.map(({ data }) => (
-    <a href={`/oracoes/${data.slug}`} class="card-oracao">
-      <img src={data.image} alt={data.title} />
-      <h3>{data.title}</h3>
-    </a>
-  ))}
-</div>
-
+    <section class="secao-home">
+      <h1>🕯️ Orações</h1>
+      <div class="grade-oracoes">
+        {oracoesRecentes.map(({ data }) => (
+          <a href={`/oracoes/${data.slug}`} class="card-oracao">
+            <img src={data.image} alt={data.title} />
+            <h3>{data.title}</h3>
+          </a>
+        ))}
+      </div>
+    </section>
   </main>
 </Layout>
