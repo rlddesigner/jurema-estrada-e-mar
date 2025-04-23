@@ -25,14 +25,14 @@ const pontosRecentes = pontos
 </section>
   <main class="pagina-lista">
     <section class="secao-home">
-      <h2>🎶 Pontos Cantados</h1>
-      <ul class="lista-pontos">
+      <h2>🎶 Pontos Cantados Recentes</h2>
+      <div class="grade-oracoes home">
         {pontosRecentes.map(({ data }) => (
-          <li>
-            <a href={`/pontos/${data.slug}`}>{data.title}</a>
-          </li>
+          <a href={`/pontos/${data.slug}`} class="card-oracao">
+            <h3>{data.title}</h3>
+          </a>
         ))}
-      </ul>
+      </div>
     </section>
   </main>
 </Layout>
