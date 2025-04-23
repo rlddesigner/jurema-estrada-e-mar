@@ -8,7 +8,7 @@ categoria: "oração"
 classe: "oracao-oxum-autoestima"
 entidade: "oxum"
 tags: ["autoestima", "oxum", "cura emocional", "oração"]
-pubDate: "2025-04-30"
+pubDate: "2025-04-21"
 estilo: bg-oxum
 folhas: true
 seo:
