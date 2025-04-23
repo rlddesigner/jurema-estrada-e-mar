@@ -161,16 +161,17 @@ a:hover {
   color: #fff;
 }
 
+/* Artigo (bloco da oração) */
 .oracao-oxum-autoestima article {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.2); /* bem leve */
+  background-color: rgba(255, 236, 188, 0.85); /* amarelo bem clarinho */
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5e400d; /* tom amarronzado pra ler melhor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .oracao-oxum-autoestima .capa-oracao {
