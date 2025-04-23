@@ -229,3 +229,19 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   font-size: 1.1rem;
   text-align: center;
 }
+.rodape-links-legais {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #777;
+}
+
+.rodape-links-legais a {
+  color: #777;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.rodape-links-legais a:hover {
+  text-decoration: underline;
+}
