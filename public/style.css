@@ -184,4 +184,40 @@ a:hover {
   0% {opacity:0;}
   100% {opacity:1;}
 }
+.pagina-oracao {
+  background-image: url('/imagens/oxum-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #4a3b2c;
+}
+
+.pagina-oracao h1 {
+  font-family: 'Marcellus', serif;
+  color: #b58f4b;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.pagina-oracao .capa-oracao {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.pagina-oracao article {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
 
