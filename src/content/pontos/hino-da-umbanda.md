@@ -10,8 +10,6 @@ seo:
   description: Letra do Hino da Umbanda, cantado com fé e respeito nas aberturas de gira.
 ---
 
-## Hino da Umbanda
-
 Refletiu a luz divina  
 Com todo seu esplendor  
 Vem do reino de Oxalá  
