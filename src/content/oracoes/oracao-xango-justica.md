@@ -3,7 +3,7 @@ layout: null
 title: "Oração para Xangô – Por Justiça e Equilíbrio"
 slug: "oracao-xango-justica"
 description: "Uma oração para quem clama por justiça, equilíbrio e sabedoria diante de desafios. Que Xangô julgue com retidão."
-image: "/imagens/oracao-xango.jpg"
+image: "/imagens/xango1.png"
 categoria: "oração"
 classe: "oracao-xango-justica"
 entidade: "xango"
