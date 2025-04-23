@@ -131,11 +131,13 @@ main {
 .capa-oracao {
   display: block;
   margin: 2rem auto;
-  width: 100%;
   max-width: 600px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .pagina-oracao h1 {
