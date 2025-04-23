@@ -402,4 +402,60 @@ main.pagina-ensinamento article {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+.layout-pontos {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.lista-lateral {
+  background: #fffdf8;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.lista-lateral h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lista-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-lateral li {
+  margin-bottom: 0.5rem;
+}
+
+.lista-lateral a {
+  text-decoration: none;
+  color: #432;
+  font-size: 0.95rem;
+}
+
+.grade-pontos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card-pontos {
+  background: #fffdf8;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #432;
+}
+
+.card-pontos:hover {
+  transform: translateY(-4px);
+}
 
