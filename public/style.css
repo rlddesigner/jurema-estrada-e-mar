@@ -147,12 +147,13 @@ a:hover {
 .pagina-oracao {
   background-image: url('/imagens/oxum-bg.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
   width: 100%;
-  padding: 3rem 1.5rem;
-  color: #fff; /* texto branco padrão */
+  padding: 4rem 1.5rem;
+  color: #fff;
   text-align: center;
 }
 
@@ -160,11 +161,11 @@ a:hover {
   font-family: 'Marcellus', serif;
   color: #ffffff;
   font-size: 2.5rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
   margin-bottom: 2rem;
 }
 
-.pagina-oracao .capa-oracao {
+.capa-oracao {
   max-width: 600px;
   width: 100%;
   height: auto;
@@ -175,7 +176,7 @@ a:hover {
 }
 
 .pagina-oracao article {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.95); /* opacidade levinha */
   color: #4a3b2c;
   max-width: 800px;
   margin: 0 auto;
@@ -185,3 +186,4 @@ a:hover {
   line-height: 1.8;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
