@@ -17,8 +17,14 @@ const { title, estilo = "", folhas = false } = Astro.props;
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
   </head>
   <body class={`pagina-oracao ${estilo}`}>
-    <import src="../components/Header.astro" />
-    <Header />
+    ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<Header />
+...
+<Footer />
+
 
     <main class="conteudo-principal">
       <slot />
