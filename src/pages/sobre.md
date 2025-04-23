@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: ../layouts/BaseLayout.astro
 title: Sobre
 slug: sobre
 description: Conheça a história, o propósito e o axé por trás do site Jurema, Estrada e Mar.
