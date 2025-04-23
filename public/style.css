@@ -147,15 +147,38 @@ a:hover {
 .oracao-oxum-autoestima {
   background-image: url('/imagens/bg-oxum-autoestima.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   color: #fff;
-  min-height: 100vh;
-  padding: 3rem 1.5rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .oracao-oxum-autoestima h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.oracao-oxum-autoestima article {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2); /* bem leve */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.oracao-oxum-autoestima .capa-oracao {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
