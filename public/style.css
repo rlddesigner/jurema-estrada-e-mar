@@ -334,4 +334,44 @@ main.pagina-ensinamento article {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   display: block;
 }
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  main,
+  .secao-home,
+  .pagina-lista {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-oracao {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .card-oracao img {
+    height: auto;
+    max-height: 180px;
+  }
+
+  .grade-oracoes,
+  .grade-pontos,
+  .grade-ensinamentos {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  footer .rodape-interno {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+}
 
