@@ -196,3 +196,36 @@ footer .folhas-fixas img:nth-child(3) { bottom: 8px; left: 40%; transform: rotat
 footer .folhas-fixas img:nth-child(4) { bottom: 12px; left: 60%; transform: rotate(-10deg); }
 footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotate(12deg); }
 
+.grade-oracoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-oracao {
+  background: #fffdf8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #432;
+  transition: transform 0.2s ease;
+}
+
+.card-oracao:hover {
+  transform: translateY(-4px);
+}
+
+.card-oracao img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-oracao h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+
