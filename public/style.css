@@ -475,6 +475,7 @@ main.pagina-ensinamento article {
   display: flex;
   width: max-content;
   animation: deslizar 120s linear infinite;
+  animation-delay: -10s;
   gap: 4rem;
 }
 
@@ -486,7 +487,6 @@ main.pagina-ensinamento article {
 }
 
 @keyframes deslizar {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50%)); } /* move metade do conteúdo */
 }
-
