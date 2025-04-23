@@ -117,34 +117,44 @@ main {
   color: #a87440;
   border: 1px solid #a87440;
 
-  .pagina-oracao {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: #fffefc;
-  border-radius: 1rem;
-  box-shadow: 0 2px 6px rgba(215, 194, 164, 0.2);
-  position: relative;
-  line-height: 1.7;
+  /* PÁGINA DE ORAÇÃO */
+
+.pagina-oracao {
+  background-image: url('/imagens/oxum-bg.jpg'); /* coloque o nome correto da imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #4a3b2c;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.capa-oracao {
-  display: block;
-  margin: 2rem auto;
+.pagina-oracao h1 {
+  font-family: 'Marcellus', serif;
+  color: #b58f4b;
+  font-size: 2.2rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.pagina-oracao .capa-oracao {
   max-width: 600px;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-
-
-.pagina-oracao h1 {
-  text-align: center;
-  color: #b58f4b;
-  font-family: 'Marcellus', serif;
-  margin-bottom: 2rem;
+.pagina-oracao article {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
 }
 
   margin-top: 1rem;
