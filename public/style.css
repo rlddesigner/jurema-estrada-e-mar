@@ -146,14 +146,18 @@ a:hover {
 }
 .oracao-oxum-autoestima {
   background-image: url('/imagens/oxum-bg.jpg');
-  background-size: cover;
-  background-position: center center;
+ background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  color: #fff;
-  padding: 4rem 2rem;
-  text-align: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
-
+.oracao-oxum-autoestima main {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
 .oracao-oxum-autoestima h1 {
   font-size: 2.8rem;
   margin-bottom: 2rem;
