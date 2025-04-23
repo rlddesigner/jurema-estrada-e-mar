@@ -1,10 +1,13 @@
 ---
-// src/layouts/BaseLayout.astro
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
 interface Props {
   title: string;
   estilo?: string;
   folhas?: boolean;
 }
+
 const { title, estilo = "", folhas = false } = Astro.props;
 ---
 
@@ -12,25 +15,24 @@ const { title, estilo = "", folhas = false } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <title>{title} | Jurema, Estrada e Mar</title>
+
+    <!-- CSS principal do site -->
     <link rel="stylesheet" href="/style.css" />
+
+    <!-- CSS específico por estilo (ex: bg-oxum) -->
     {estilo === 'bg-oxum' && <link rel="stylesheet" href="/styles/oracoes/oracao-oxum.css" />}
+
+    <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
   </head>
-  <body class={`pagina-oracao ${estilo}`}>
-    ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
----
-<Header />
-...
-<Footer />
 
+  <body class={`pagina-oracao ${estilo}`}>
+    <Header />
 
     <main class="conteudo-principal">
       <slot />
     </main>
 
-    <import src="../components/Footer.astro" />
     <Footer />
 
     {folhas && (
