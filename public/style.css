@@ -286,17 +286,19 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
 .grade-oracoes,
 .grade-pontos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.5rem;
-  max-width: 860px; /* <- esse é o segredo! */
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto; /* isso aqui centraliza */
+  justify-content: center;
 }
 .grade-ensinamentos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.5rem;
-  max-width: 860px; /* <- esse é o segredo! */
-  margin-top: 1.5rem;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto; /* isso aqui centraliza */
+  justify-content: center;
 }
 main.pagina-ensinamento {
   display: flex;
