@@ -474,7 +474,7 @@ main.pagina-ensinamento article {
 .carrossel-inner {
   display: flex;
   width: max-content;
-  animation: deslizar 120s linear infinite;
+  animation: deslizar 140s linear infinite;
   animation-delay: -10s;
   gap: 4rem;
 }
