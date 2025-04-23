@@ -1,10 +1,29 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const pontos = await getCollection('pontos');
+
+// Organiza por data (mais novos no topo)
+const pontosRecentes = pontos
+  .filter((p) => p.data.pubDate)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
-<Layout title="Pontos Cantados" description="Pontos cantados que ecoam com a força dos guias da Umbanda.">
-  <main>
-    <h1>Pontos Cantados</h1>
-    <p>Cantos sagrados que vibram o axé das entidades. Em breve disponíveis!</p>
+<Layout 
+  title="Pontos Cantados"
+  description="Cantos sagrados recebidos na gira, guiados por orixás, caboclos e entidades da Umbanda."
+>
+  <main class="pagina-lista">
+    <section class="secao-home">
+      <h1>🎶 Pontos Cantados</h1>
+      <ul class="lista-pontos">
+        {pontosRecentes.map(({ data }) => (
+          <li>
+            <a href={`/pontos/${data.slug}`}>{data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
   </main>
 </Layout>
