@@ -24,9 +24,9 @@ const { title, description, image, estilo } = post.data;
 >
 
 <main class={`pagina-ensinamento ${post.data.classe}`}>
-
-    {image && <img src={image} alt={title} class="capa-oracao" />}
     <h1>{title}</h1>
+    {image && <img src={image} alt={title} class="capa-oracao" />}
+    
 
     <article class="conteudo-oracao">
       <Content />
