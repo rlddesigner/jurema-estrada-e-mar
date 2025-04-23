@@ -1,10 +1,31 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const ensinamentos = await getCollection('ensinamentos');
+
+// Organiza do mais recente pro mais antigo
+const ensinamentosRecentes = ensinamentos
+  .filter((e) => e.data.pubDate)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
-<Layout title="Ensinamentos" description="Reflexões, fundamentos e sabedorias recebidas da espiritualidade.">
-  <main>
-    <h1>Ensinamentos</h1>
-    <p>Palavras que trazem direção e conhecimento. Em breve!</p>
+<Layout 
+  title="Ensinamentos Espirituais"
+  description="Reflexões, fundamentos e sabedorias da Umbanda, compartilhados com amor e axé."
+>
+  <main class="pagina-lista">
+    <section class="secao-home">
+      <h1>📘 Ensinamentos Espirituais</h1>
+      <div class="grade-ensinamentos">
+        {ensinamentosRecentes.map(({ data }) => (
+          <a href={`/ensinamentos/${data.slug}`} class="card-oracao">
+            {data.image && <img src={data.image} alt={data.title} />}
+            <h3>{data.title}</h3>
+            <p>{data.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
   </main>
 </Layout>
