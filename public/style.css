@@ -154,8 +154,7 @@ a:hover {
   z-index: 0;
 }
 
-header .folhas-fixas img,
-footer .folhas-fixas img {
+header .folhas-fixas img {
   position: absolute;
   width: 40px;
   opacity: 0.5;
@@ -169,9 +168,31 @@ header .folhas-fixas img:nth-child(4) { top: 15px; left: 50%; transform: rotate(
 header .folhas-fixas img:nth-child(5) { top: 0; left: 70%; transform: rotate(-20deg); }
 header .folhas-fixas img:nth-child(6) { top: 25px; left: 90%; transform: rotate(5deg); }
 
-/* Folhas no footer */
-footer .folhas-fixas img:nth-child(1) { bottom: 10px; left: 10%; transform: rotate(10deg); }
-footer .folhas-fixas img:nth-child(2) { bottom: 20px; left: 30%; transform: rotate(-15deg); }
-footer .folhas-fixas img:nth-child(3) { bottom: 15px; left: 50%; transform: rotate(20deg); }
-footer .folhas-fixas img:nth-child(4) { bottom: 5px; left: 70%; transform: rotate(-10deg); }
-footer .folhas-fixas img:nth-child(5) { bottom: 30px; left: 85%; transform: rotate(12deg); }
+footer {
+  position: relative; /* Muito importante! */
+  overflow: hidden;
+}
+
+footer .folhas-fixas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+footer .folhas-fixas img {
+  position: absolute;
+  width: 40px;
+  opacity: 0.5;
+}
+
+/* Melhor distribuição no rodapé */
+footer .folhas-fixas img:nth-child(1) { bottom: 10px; left: 5%; transform: rotate(10deg); }
+footer .folhas-fixas img:nth-child(2) { bottom: 15px; left: 20%; transform: rotate(-15deg); }
+footer .folhas-fixas img:nth-child(3) { bottom: 8px; left: 40%; transform: rotate(20deg); }
+footer .folhas-fixas img:nth-child(4) { bottom: 12px; left: 60%; transform: rotate(-10deg); }
+footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotate(12deg); }
+
