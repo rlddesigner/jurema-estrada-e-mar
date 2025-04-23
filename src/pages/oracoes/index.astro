@@ -14,13 +14,14 @@ const ordenadas = oracoes.sort((a, b) => new Date(b.data.pubDate) - new Date(a.d
     <h1>✨ Orações</h1>
     <p class="intro">Aqui você encontra orações para momentos de força, acolhimento, cura e conexão espiritual.</p>
 
-    <div class="grade-pontos">
-      {pontosRecentes.map(({ data }) => (
-    <a href={`/pontos/${data.slug}`} class="card-oracao">
-          <img src={post.data.image} alt={post.data.title} />
-          <h3>{data.title}</h3>
+   <div class="grade-oracoes">
+  {oracoesRecentes.map(({ data }) => (
+    <a href={`/oracoes/${data.slug}`} class="card-oracao">
+      <img src={data.image} alt={data.title} />
+      <h3>{data.title}</h3>
     </a>
   ))}
 </div>
+
   </main>
 </Layout>
