@@ -1,6 +1,5 @@
 ---
 import { getEntryBySlug } from 'astro:content';
-import { Content } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 const { slug } = Astro.params;
@@ -10,11 +9,12 @@ if (!post) {
   throw new Error(`Post "${slug}" não encontrado.`);
 }
 
+const { Content } = await post.render();
 const { title, description, image, estilo } = post.data;
 ---
 
 <Layout 
-  title={title} 
+  title={title}
   description={description}
   estilo={estilo}
   folhas={estilo === "folhas-caindo"}
@@ -22,6 +22,6 @@ const { title, description, image, estilo } = post.data;
   <main class="pagina-oracao">
     {image && <img src={image} alt={title} class="capa-oracao" />}
     <h1>{title}</h1>
-    <Content value={entry.body} />
+    <Content />
   </main>
 </Layout>
