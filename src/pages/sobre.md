@@ -5,6 +5,7 @@ slug: sobre
 description: Conheça a história, o propósito e o axé por trás do site Jurema, Estrada e Mar.
 classe: "pagina-sobre"
 pubDate: "2025-04-23"
+classe: "pagina-institucional"
 seo:
   title: Sobre o projeto Jurema, Estrada e Mar
   description: Um espaço espiritual criado para acolher, ensinar e compartilhar fundamentos da Umbanda com verdade e fé.
