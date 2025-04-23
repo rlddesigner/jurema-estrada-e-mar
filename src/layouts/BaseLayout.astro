@@ -13,6 +13,7 @@ const { title, estilo = "", folhas = false } = Astro.props;
     <meta charset="UTF-8" />
     <title>{title} | Jurema, Estrada e Mar</title>
     <link rel="stylesheet" href="/style.css" />
+    {estilo === 'bg-oxum' && <link rel="stylesheet" href="/styles/oracoes/oracao-oxum.css" />}
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
   </head>
   <body class={`pagina-oracao ${estilo}`}>
