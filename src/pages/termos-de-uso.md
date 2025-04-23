@@ -3,6 +3,7 @@ layout: ../layouts/BaseLayout.astro
 title: Termos de Uso
 estilo: ""
 folhas: false
+classe: "pagina-institucional"
 ---
 
 ## Termos de Uso
