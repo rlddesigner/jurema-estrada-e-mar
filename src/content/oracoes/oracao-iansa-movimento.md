@@ -8,7 +8,7 @@ categoria: "oração"
 classe: "oracao-iansa-movimento"
 entidade: "iansa"
 tags: ["iansã", "movimento", "caminhos", "trabalho", "decisão"]
-pubDate: "2025-04-30"
+pubDate: "2025-04-22"
 estilo: bg-iansa
 folhas: true
 seo:
