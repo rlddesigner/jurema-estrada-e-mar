@@ -269,3 +269,10 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   background: #f7efe0;
   transform: translateY(-2px);
 }
+.grade-oracoes,
+.grade-pontos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
