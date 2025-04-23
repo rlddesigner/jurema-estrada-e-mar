@@ -22,7 +22,9 @@ const { title, description, image, estilo } = post.data;
   estilo={estilo}
   folhas={estilo === "folhas-caindo"}
 >
-  <main class={`pagina-oracao ${post.data.classe}`}>
+
+<main class={`pagina-ensinamento ${post.data.classe}`}>
+
     {image && <img src={image} alt={title} class="capa-oracao" />}
     <h1>{title}</h1>
 
