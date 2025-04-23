@@ -2,13 +2,26 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
+// Últimas orações
 const oracoes = await getCollection('oracoes');
-
-// Ordena pelas mais recentes usando pubDate
 const oracoesRecentes = oracoes
-  .filter((oracao) => oracao.data.pubDate)
+  .filter((o) => o.data.pubDate)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
-  .slice(0, 3); // mostra só as 6 mais recentes
+  .slice(0, 3);
+
+// Últimos ensinamentos
+const ensinamentos = await getCollection('ensinamentos');
+const ensinamentosRecentes = ensinamentos
+  .filter((e) => e.data.pubDate)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 3);
+
+// Últimos pontos cantados
+const pontos = await getCollection('pontos');
+const pontosRecentes = pontos
+  .filter((p) => p.data.pubDate)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 3);
 ---
 
 <Layout 
@@ -16,7 +29,8 @@ const oracoesRecentes = oracoes
   description="Bem-vinde ao Jurema, Estrada e Mar – um espaço espiritual com orações, pontos cantados e ensinamentos guiados por luz e axé."
 >
   <main class="inicio">
-    <!-- 🌼 Saudação espiritual -->
+
+    <!-- 🌼 Saudação -->
     <section class="saudacao">
       <h1>Jurema, Estrada e Mar</h1>
       <p>
@@ -25,12 +39,12 @@ const oracoesRecentes = oracoes
       </p>
     </section>
 
-    <!-- 🌿 Últimas Orações (automáticas) -->
-    <section class="secao-home ultimas-oracoes">
+    <!-- 🕊️ Últimas Orações -->
+    <section class="secao-home">
       <h2>🕊️ Últimas Orações</h2>
-      <div class="grade-oracoes">
+      <div class="grade-oracoes home">
         {oracoesRecentes.map(({ data }) => (
-          <a href={data.slug ? `/oracoes/${data.slug}` : '#'} class="card-oracao">
+          <a href={`/oracoes/${data.slug}`} class="card-oracao">
             <img src={data.image} alt={data.title} />
             <h3>{data.title}</h3>
           </a>
@@ -38,18 +52,30 @@ const oracoesRecentes = oracoes
       </div>
     </section>
 
-    <!-- 🎶 Pontos Cantados -->
+    <!-- 📘 Últimos Ensinamentos -->
     <section class="secao-home">
-      <h2>🎶 Pontos Cantados</h2>
-      <p>Em breve você encontrará aqui cantos de fé que vibram com a força dos guias da Umbanda.</p>
-      <a class="ver-todas" href="/pontos">Ir para os pontos</a>
+      <h2>📘 Ensinamentos Recentes</h2>
+      <div class="grade-oracoes home">
+        {ensinamentosRecentes.map(({ data }) => (
+          <a href={`/ensinamentos/${data.slug}`} class="card-oracao">
+            {data.image && <img src={data.image} alt={data.title} />}
+            <h3>{data.title}</h3>
+          </a>
+        ))}
+      </div>
     </section>
 
-    <!-- 📘 Ensinamentos -->
+    <!-- 🎶 Últimos Pontos Cantados -->
     <section class="secao-home">
-      <h2>📘 Ensinamentos Espirituais</h2>
-      <p>Reflexões e fundamentos recebidos da espiritualidade. Em breve!</p>
-      <a class="ver-todas" href="/ensinamentos">Ver ensinamentos</a>
+      <h2>🎶 Pontos Cantados Recentes</h2>
+      <div class="grade-oracoes home">
+        {pontosRecentes.map(({ data }) => (
+          <a href={`/pontos/${data.slug}`} class="card-oracao">
+            <h3>{data.title}</h3>
+          </a>
+        ))}
+      </div>
     </section>
+
   </main>
 </Layout>
