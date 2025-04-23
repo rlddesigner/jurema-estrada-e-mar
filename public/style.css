@@ -291,3 +291,10 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   max-width: 860px; /* <- esse é o segredo! */
   margin-top: 1rem;
 }
+.grade-ensinamentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
