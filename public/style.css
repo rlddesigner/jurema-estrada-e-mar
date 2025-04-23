@@ -130,12 +130,13 @@ main {
 
 .capa-oracao {
   display: block;
-  max-width: 600px;
-  width: 90%;
   margin: 2rem auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
+
 
 .pagina-oracao h1 {
   text-align: center;
