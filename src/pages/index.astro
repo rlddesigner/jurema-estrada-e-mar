@@ -8,7 +8,7 @@ const oracoes = await getCollection('oracoes');
 const oracoesRecentes = oracoes
   .filter((oracao) => oracao.data.pubDate)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
-  .slice(0, 6); // mostra só as 6 mais recentes
+  .slice(0, 3); // mostra só as 6 mais recentes
 ---
 
 <Layout 
