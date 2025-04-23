@@ -146,10 +146,11 @@ a:hover {
 }
 body.oracao-oxum-autoestima {
   background-image: url('/imagens/oxum-bg.jpg');
- background-size: cover;
-  background-position: center center;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 .pagina-oracao-oxum-autoestima {
   display: flex;
@@ -163,7 +164,6 @@ body.oracao-oxum-autoestima {
   text-align: center;
 }
 .oracao-oxum-autoestima main {
-  background: transparent;
   padding: 0;
   margin: 0;
 }
