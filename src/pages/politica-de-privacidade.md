@@ -3,6 +3,7 @@ layout: ../layouts/BaseLayout.astro
 title: Política de Privacidade
 estilo: ""
 folhas: false
+classe: "pagina-institucional"
 ---
 
 ## Política de Privacidade
