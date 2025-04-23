@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: null
 title: Hino da Umbanda
 slug: hino-da-umbanda
 pubDate: 2025-04-30
