@@ -23,6 +23,22 @@ Salve a Coroa de Exu Marabô
 
 ---
 
+## 🎧 Ouça esse ponto
+
+<div class="video-ponto">
+  <iframe 
+    width="100%" 
+    height="315" 
+    src="https://www.youtube.com/embed/e_blFzt6Hwk" 
+    title="Ponto de Exu Marabô - Ventou no Canavial" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+  ></iframe>
+</div>
+
+---
+
 ## ✨ Fundamento do ponto
 
 Esse ponto é um verdadeiro chamado de força e respeito à **linhagem espiritual de Exu Marabô**.
