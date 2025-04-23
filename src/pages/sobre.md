@@ -3,7 +3,6 @@ layout: ../layouts/BaseLayout.astro
 title: Sobre
 slug: sobre
 description: Conheça a história, o propósito e o axé por trás do site Jurema, Estrada e Mar.
-classe: "pagina-sobre"
 pubDate: "2025-04-23"
 classe: "pagina-institucional"
 seo:
