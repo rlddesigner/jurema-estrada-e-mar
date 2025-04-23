@@ -2,7 +2,7 @@
 title: "Oração para Oxum – Autoestima e Amor-próprio"
 slug: "oracao-oxum-autoestima"
 description: "Uma oração para momentos de insegurança, para fortalecer o amor-próprio sob o brilho e acolhimento de Mãe Oxum."
-image: "/imagens/oracao-oxum-autoestima.jpg"
+image: "/imagens/oracao-oxum.jpg"
 categoria: "oração"
 entidade: "oxum"
 tags: ["autoestima", "oxum", "cura emocional", "oração"]
@@ -12,6 +12,7 @@ seo:
   title: "Oração para Autoestima com Oxum"
   description: "Recupere a autoconfiança com essa oração de luz guiada por Mãe Oxum. Cura, doçura e força interior."
 ---
+{image && <img src={image} alt={title} class="capa-oracao" />}
 
 Mãe Oxum,  
 Senhora das Águas Doces e da beleza que nasce de dentro,  
