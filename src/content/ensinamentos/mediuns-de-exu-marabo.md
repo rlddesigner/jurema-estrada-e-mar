@@ -11,7 +11,6 @@ seo:
   description: "Entenda os caminhos, desafios e potenciais dos médiuns que trabalham com Exu Marabô, guia de sabedoria, magia e força."
 ---
 
-## Médiuns de Exu Marabô: características e caminho espiritual
 
 Muitos já ouviram falar de Exu Marabô — entidade firme, de presença marcante, muito cultuado em diversos terreiros de Umbanda.  
 Mas você já se perguntou **como são as pessoas que trabalham com ele?**  
