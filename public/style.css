@@ -197,34 +197,40 @@ footer .folhas-fixas img:nth-child(4) { bottom: 12px; left: 60%; transform: rota
 footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotate(12deg); }
 
 .grade-oracoes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
+
 
 .card-oracao {
   background: #fffdf8;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-decoration: none;
   color: #432;
   transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 90%;
+  max-width: 240px;
+  margin: 0 auto;
 }
+
 
 .card-oracao:hover {
   transform: translateY(-4px);
 }
 
 .card-oracao img {
-  width: 100%;
+  width: 90%;
   height: 200px;
   object-fit: cover;
-  border-radius: 0.7rem 0.7rem 0 0;
-  display: block;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 
