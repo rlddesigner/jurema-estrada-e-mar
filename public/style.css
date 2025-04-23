@@ -199,8 +199,9 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
 .grade-oracoes {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 1.2rem; /* menos espaço entre os cards */
+  padding: 1rem;
 }
 
 
@@ -215,10 +216,11 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  width: 90%;
   max-width: 240px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
+
 
 
 .card-oracao:hover {
