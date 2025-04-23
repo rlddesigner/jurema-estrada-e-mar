@@ -1,25 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
----
 
-<Layout 
-  title="Início"
-  description="Bem-vinde ao Jurema, Estrada e Mar – um espaço espiritual com orações, pontos cantados e ensinamentos guiados por luz e axé."
->
-  <main class="inicio">
-    <!-- 🌼 Saudação espiritual -->
-    <section class="saudacao">
-      <h1>Jurema, Estrada e Mar</h1>
-      <p>
-        Aqui a palavra é cura. O canto é oração.<br/>
-        O axé é luz. Seja bem-vinde ao nosso espaço de fé, sabedoria ancestral e acolhimento espiritual.
-      </p>
-    </section>
-
-    <!-- 🌿 Últimas Orações -->
-    <section class="secao-home">
-      <h2>🕊️ Últimas Orações</h2>
-      ---
 const oracoesRecentes = [
   {
     titulo: "Oração para Autoestima com Mamãe Oxum",
@@ -38,6 +19,32 @@ const oracoesRecentes = [
   }
 ];
 ---
+
+<Layout 
+  title="Início"
+  description="Bem-vinde ao Jurema, Estrada e Mar – um espaço espiritual com orações, pontos cantados e ensinamentos guiados por luz e axé."
+>
+  <main class="inicio">
+    <!-- 🌼 Saudação espiritual -->
+    <section class="saudacao">
+      <h1>Jurema, Estrada e Mar</h1>
+      <p>
+        Aqui a palavra é cura. O canto é oração.<br/>
+        O axé é luz. Seja bem-vinde ao nosso espaço de fé, sabedoria ancestral e acolhimento espiritual.
+      </p>
+    </section>
+
+    <!-- 🌿 Últimas Orações -->
+    <section class="secao-home ultimas-oracoes">
+      <h2>🕊️ Últimas Orações</h2>
+      <div class="grade-oracoes">
+        {oracoesRecentes.map((oracao) => (
+          <a href={oracao.link} class="card-oracao">
+            <img src={oracao.imagem} alt={oracao.titulo} />
+            <h3>{oracao.titulo}</h3>
+          </a>
+        ))}
+      </div>
     </section>
 
     <!-- 🎶 Pontos Cantados -->
