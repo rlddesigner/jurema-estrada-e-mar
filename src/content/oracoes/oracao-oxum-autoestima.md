@@ -8,7 +8,7 @@ classe: "oracao-oxum-autoestima"
 entidade: "oxum"
 tags: ["autoestima", "oxum", "cura emocional", "oração"]
 pubDate: "2025-04-30"
-estilo: oracao-oxum-autoestima
+estilo: bg-oxum
 seo:
   title: "Oração para Autoestima com Oxum"
   description: "Recupere a autoconfiança com essa oração de luz guiada por Mãe Oxum. Cura, doçura e força interior."
