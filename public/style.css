@@ -374,4 +374,16 @@ main.pagina-ensinamento article {
     text-align: center;
   }
 }
+.pagina-institucional article {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify; /* o alinhamento que você quer! */
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
 
