@@ -12,7 +12,6 @@ seo:
   title: "Oração para Autoestima com Oxum"
   description: "Recupere a autoconfiança com essa oração de luz guiada por Mãe Oxum. Cura, doçura e força interior."
 ---
-{image && <img src={image} alt={title} class="capa-oracao" />}
 
 Mãe Oxum,  
 Senhora das Águas Doces e da beleza que nasce de dentro,  
