@@ -146,3 +146,13 @@ main {
 
   margin-top: 1rem;
 }
+.contador-visitas {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contador-visitas img {
+  max-width: 150px;
+  opacity: 0.8;
+}
+
