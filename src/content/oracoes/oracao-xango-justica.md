@@ -8,7 +8,7 @@ categoria: "oração"
 classe: "oracao-xango-justica"
 entidade: "xango"
 tags: ["xangô", "justiça", "equilíbrio", "decisão", "proteção"]
-pubDate: "2025-04-30"
+pubDate: "2025-04-23"
 estilo: bg-xango
 folhas: true
 seo:
