@@ -1,15 +1,19 @@
 ---
-import { getEntryBySlug } from 'astro:content';
+import { getEntryBySlug, getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
-const { slug } = Astro.params;
-const post = await getEntryBySlug('oracoes', slug);
+export async function getStaticPaths() {
+  const posts = await getCollection('oracoes');
 
-if (!post) {
-  throw new Error(`Post "${slug}" não encontrado.`);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
 }
 
+const { post } = Astro.props;
 const { Content } = await post.render();
+
 const { title, description, image, estilo } = post.data;
 ---
 
