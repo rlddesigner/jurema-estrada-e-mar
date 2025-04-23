@@ -201,6 +201,7 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.2rem; /* menos espaço entre os cards */
+  max-width: 860px; /* <- esse é o segredo! */
   padding: 1rem;
 }
 
@@ -287,5 +288,6 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 0.5rem;
+  max-width: 860px; /* <- esse é o segredo! */
   margin-top: 1rem;
 }
