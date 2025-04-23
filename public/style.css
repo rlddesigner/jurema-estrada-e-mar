@@ -144,51 +144,34 @@ a:hover {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-.folhas-decorativas {
+.folhas-fixas {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   z-index: 0;
 }
 
-header .folhas-decorativas img,
-footer .folhas-decorativas img {
+header .folhas-fixas img,
+footer .folhas-fixas img {
   position: absolute;
   width: 40px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
-header .folhas-decorativas img:nth-child(1) {
-  top: 10px;
-  left: 5%;
-  transform: rotate(-15deg);
-}
+/* Folhas no header */
+header .folhas-fixas img:nth-child(1) { top: 10px; left: 5%; transform: rotate(-10deg); }
+header .folhas-fixas img:nth-child(2) { top: 20px; left: 20%; transform: rotate(15deg); }
+header .folhas-fixas img:nth-child(3) { top: 5px; left: 35%; transform: rotate(-5deg); }
+header .folhas-fixas img:nth-child(4) { top: 15px; left: 50%; transform: rotate(10deg); }
+header .folhas-fixas img:nth-child(5) { top: 0; left: 70%; transform: rotate(-20deg); }
+header .folhas-fixas img:nth-child(6) { top: 25px; left: 90%; transform: rotate(5deg); }
 
-header .folhas-decorativas img:nth-child(2) {
-  top: 20px;
-  right: 10%;
-  transform: rotate(30deg);
-}
-
-header .folhas-decorativas img:nth-child(3) {
-  top: 0;
-  left: 50%;
-  transform: rotate(-45deg);
-}
-
-footer .folhas-decorativas img:nth-child(1) {
-  bottom: 10px;
-  left: 15%;
-  transform: rotate(15deg);
-}
-
-footer .folhas-decorativas img:nth-child(2) {
-  bottom: 20px;
-  right: 20%;
-  transform: rotate(-25deg);
-}
-
-footer .folhas-decorativas img:nth-child(3) {
-  bottom: 5px;
-  left: 60%;
-  transform: rotate(10deg);
-}
+/* Folhas no footer */
+footer .folhas-fixas img:nth-child(1) { bottom: 10px; left: 10%; transform: rotate(10deg); }
+footer .folhas-fixas img:nth-child(2) { bottom: 20px; left: 30%; transform: rotate(-15deg); }
+footer .folhas-fixas img:nth-child(3) { bottom: 15px; left: 50%; transform: rotate(20deg); }
+footer .folhas-fixas img:nth-child(4) { bottom: 5px; left: 70%; transform: rotate(-10deg); }
+footer .folhas-fixas img:nth-child(5) { bottom: 30px; left: 85%; transform: rotate(12deg); }
