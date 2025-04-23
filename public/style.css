@@ -68,7 +68,7 @@ main {
 .card {
   background: #fff7ea;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(210, 180, 140, 0.2);
   transition: transform 0.2s ease;
