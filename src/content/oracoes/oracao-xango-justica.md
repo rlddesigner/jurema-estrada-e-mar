@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: null
 title: "Oração para Xangô – Por Justiça e Equilíbrio"
 slug: "oracao-xango-justica"
 description: "Uma oração para quem clama por justiça, equilíbrio e sabedoria diante de desafios. Que Xangô julgue com retidão."
