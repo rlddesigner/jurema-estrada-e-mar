@@ -57,7 +57,7 @@ const pontosRecentes = pontos
       <h2>📘 Ensinamentos Recentes</h2>
       <div class="grade-oracoes home">
         {ensinamentosRecentes.map(({ data }) => (
-          <a href={`/ensinamentos/${data.slug}`} class="card-oracao">
+          <a href={`/ensinamentos/${data.slug}`} class="card-ensinamentos">
             {data.image && <img src={data.image} alt={data.title} />}
             <h3>{data.title}</h3>
           </a>
@@ -70,7 +70,7 @@ const pontosRecentes = pontos
       <h2>🎶 Pontos Cantados Recentes</h2>
       <div class="grade-oracoes home">
         {pontosRecentes.map(({ data }) => (
-          <a href={`/pontos/${data.slug}`} class="card-oracao">
+          <a href={`/pontos/${data.slug}`} class="card-pontos">
             <h3>{data.title}</h3>
           </a>
         ))}
