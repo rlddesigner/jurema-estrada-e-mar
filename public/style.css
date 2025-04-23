@@ -220,10 +220,13 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
 }
 
 .card-oracao img {
-  width: 90%;
+  width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 0.7rem 0.7rem 0 0;
+  display: block;
 }
+
 
 .card-oracao h3 {
   padding: 1rem;
