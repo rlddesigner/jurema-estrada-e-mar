@@ -144,46 +144,18 @@ a:hover {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-.pagina-oracao {
-  background-image: url('/imagens/oxum-bg.jpg');
+.oracao-oxum-autoestima {
+  background-image: url('/imagens/bg-oxum-autoestima.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  width: 100%;
-  padding: 4rem 1.5rem;
   color: #fff;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 
-.pagina-oracao h1 {
-  font-family: 'Marcellus', serif;
-  color: #ffffff;
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-  margin-bottom: 2rem;
+.oracao-oxum-autoestima h1 {
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
-
-.capa-oracao {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-.pagina-oracao article {
-  background-color: rgba(255, 255, 255, 0.95); /* opacidade levinha */
-  color: #4a3b2c;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
