@@ -19,25 +19,25 @@ import Layout from '../layouts/Layout.astro';
     <!-- 🌿 Últimas Orações -->
     <section class="secao-home">
       <h2>🕊️ Últimas Orações</h2>
-      <div class="cards-grid">
-        <div class="card">
-          <img src="/imagens/oracao-oxum.jpg" alt="Oração para Oxum" />
-          <h3>Oração para Oxum</h3>
-          <p>Uma prece para momentos de fragilidade, guiada pela força das águas doces.</p>
-          <a class="botao" href="/oracoes/oracao-oxum">Ler oração</a>
-        </div>
-
-        <!-- Exemplo adicional -->
-        <!--
-        <div class="card">
-          <img src="/imagens/oracao-iemanja.jpg" alt="Oração para Iemanjá" />
-          <h3>Oração para Iemanjá</h3>
-          <p>Uma oração para se conectar com a força do mar e da mãe ancestral.</p>
-          <a class="botao" href="/oracoes/oracao-iemanja">Ler oração</a>
-        </div>
-        -->
-      </div>
-      <a class="ver-todas" href="/oracoes">Ver todas as orações</a>
+      ---
+const oracoesRecentes = [
+  {
+    titulo: "Oração para Autoestima com Mamãe Oxum",
+    imagem: "/imagens/oracao-oxum.jpg",
+    link: "/oracoes/oracao-oxum-autoestima"
+  },
+  {
+    titulo: "Oração para Amor com Mamãe Iemanjá",
+    imagem: "/imagens/oracao-iemanja.jpg",
+    link: "/oracoes/oracao-iemanja-amor"
+  },
+  {
+    titulo: "Prece de Força com Xangô",
+    imagem: "/imagens/oracao-xango.jpg",
+    link: "/oracoes/oracao-xango-forca"
+  }
+];
+---
     </section>
 
     <!-- 🎶 Pontos Cantados -->
