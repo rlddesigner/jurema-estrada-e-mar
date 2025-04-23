@@ -1,0 +1,56 @@
+/* Fundo dourado com imagem exclusiva de Oxum */
+body.bg-oxum {
+  background-image: url('/imagens/oxum-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: #432;
+}
+
+/* Estilização da página principal */
+main.pagina-oracao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+}
+
+/* Título com brilho e presença */
+main.pagina-oracao h1 {
+  font-size: 2.8rem;
+  color: #fff8e7;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Bloco da oração */
+main.pagina-oracao article {
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+/* Imagem de capa da oração */
+.oracao-oxum-autoestima .capa-oracao {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
