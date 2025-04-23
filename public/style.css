@@ -59,10 +59,10 @@ main {
 }
 
 .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .card {
@@ -197,8 +197,8 @@ footer .folhas-fixas img:nth-child(4) { bottom: 12px; left: 60%; transform: rota
 footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotate(12deg); }
 
 .grade-oracoes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
