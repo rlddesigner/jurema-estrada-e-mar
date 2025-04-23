@@ -1,25 +1,31 @@
 ---
+import { getEntryBySlug, getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import { getEntryBySlug } from 'astro:content';
 
-const { slug } = Astro.params;
-const ponto = await getEntryBySlug('pontos', slug);
-
-if (!ponto) {
-  throw new Error(`Ponto não encontrado: ${slug}`);
+export async function getStaticPaths() {
+  const posts = await getCollection('pontos');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
 }
 
-const {
-  data: { title, description },
-  body
-} = ponto;
+const { post } = Astro.props;
+const { Content } = await post.render();
 
-const { Content } = await ponto.render();
+const { title, description, image, estilo } = post.data;
 ---
 
-<Layout title={title} description={description}>
-  <main class="pagina-oracao">
+<Layout 
+  title={title}
+  description={description}
+  estilo={estilo}
+  folhas={estilo === "folhas-caindo"}
+>
+  <main class={`pagina-oracao ${post.data.classe}`}>
+    {image && <img src={image} alt={title} class="capa-oracao" />}
     <h1>{title}</h1>
+
     <article class="conteudo-oracao">
       <Content />
     </article>
