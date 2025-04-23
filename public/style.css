@@ -295,7 +295,7 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
 .grade-ensinamentos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 960px;
   margin: 0 auto; /* isso aqui centraliza */
   justify-content: center;
