@@ -5,7 +5,7 @@ slug: "oracao-nana-purificacao-emocional"
 description: "Peça a Nanã que leve embora as mágoas, tristezas e angústias com suas águas profundas e curadoras."
 image: "/imagens/oracao-nana.jpg"
 categoria: "oração"
-classe: "oracao-nana-purificacao-emocional"
+classe: "oracao-nana"
 entidade: "nana"
 tags: ["nanã", "oração", "purificação", "limpeza emocional", "orixá das águas", "ancestralidade", "cura espiritual"]
 pubDate: "2025-04-24"
