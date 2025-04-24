@@ -2,14 +2,15 @@
 layout: null
 title: O que é Umbanda?
 slug: o-que-e-umbanda
-description: Conheça os fundamentos da Umbanda e entenda como essa religião une fé, caridade e forças da natureza.
+description: "Entenda a Umbanda de forma clara e espiritualizada: sua origem, fundamentos e propósito no mundo."
 image: /imagens/ensinamento-o-que-e-umbanda.jpg
 classe: "ensinamento-umbanda"
 pubDate: 2025-04-23
 seo:
-  title: O que é Umbanda?
-  description: Entenda a Umbanda de forma clara e espiritualizada: sua origem, fundamentos e propósito no mundo.
+  title: "O que é Umbanda?"
+  description: "Entenda a Umbanda de forma clara e espiritualizada: sua origem, fundamentos e propósito no mundo."
 ---
+
 
 A Umbanda é uma religião brasileira que nasceu do encontro entre culturas e espiritualidades diferentes.  
 É fé viva, prática espiritual e caridade em ação.
