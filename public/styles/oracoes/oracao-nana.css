@@ -1,0 +1,57 @@
+/* Fundo com imagem exclusiva de Nanã Buruquê */
+body.bg-nana {
+  background-image: url('/imagens/bg-nana.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: #2e1e2e; /* Roxo escuro acinzentado, denso e ancestral */
+}
+
+/* Estrutura da página */
+main.pagina-oracao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+}
+
+/* Título com imponência e suavidade */
+main.pagina-oracao h1 {
+  font-size: 2.8rem;
+  color: #fef6ff;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.55);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Bloco da oração */
+main.pagina-oracao article {
+  max-width: 800px;
+  background-color: rgba(250, 240, 255, 0.88);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  color: #4b2f4b;
+}
+
+/* Imagem da capa */
+.oracao-nana-movimento .capa-oracao {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
