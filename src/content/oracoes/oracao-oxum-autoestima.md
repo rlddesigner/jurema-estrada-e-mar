@@ -5,7 +5,7 @@ slug: "oracao-oxum-autoestima"
 description: "Uma oração para momentos de insegurança, para fortalecer o amor-próprio sob o brilho e acolhimento de Mãe Oxum."
 image: "/imagens/oracao-oxum.jpg"
 categoria: "oração"
-classe: "oracao-oxum-autoestima"
+classe: "oracao-oxum"
 entidade: "oxum"
 tags: ["autoestima", "oxum", "cura emocional", "oração"]
 pubDate: "2025-04-21"
