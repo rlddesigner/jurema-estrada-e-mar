@@ -26,14 +26,16 @@ const pontosRecentes = pontos
 
   <div class="layout-pontos">
     <!-- Coluna 1: Lista lateral -->
-    <aside class="lista-lateral">
-      <h3>🎵 Todos os Pontos</h3>
-      <ul>
-        {pontosRecentes.map(({ data }) => (
-          <li><a href={`/pontos/${data.slug}`}>{data.title}</a></li>
-        ))}
-      </ul>
-    </aside>
+   <aside class="lista-lateral">
+  <h3>🎵 Categorias de Pontos</h3>
+  <ul>
+    <li><a href="/pontos/saudacao">🎵 Pontos de Saudação</a></li>
+    <li><a href="/pontos/demanda">🕯️ Pontos de Demanda</a></li>
+    <li><a href="/pontos/exu">🔴 Pontos de Exu</a></li>
+    <li><a href="/pontos/chegada">✨ Pontos de Chegada</a></li>
+  </ul>
+</aside>
+
 
     <!-- Coluna 2: Cards -->
     <div class="grade-pontos">
