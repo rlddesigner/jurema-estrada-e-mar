@@ -35,23 +35,6 @@ article h3 {
   margin-top: 2rem;
   margin-bottom: 1.2rem;
 }
-
-/* Estilo para TODOS os parágrafos dentro do artigo */
-article p {
-  text-align: center;
-  white-space: pre-line;
-  font-size: 1.05rem;
-  line-height: 1.4;
-  margin: 0.3rem 0;
-  color: #432;
-}
-
-/* Tira margem superior do primeiro parágrafo */
-article p:first-of-type {
-  margin-top: 0;
-}
-
-
 /* 🎧 Bloco de vídeo */
 .video-ponto {
   max-width: 800px;
@@ -70,9 +53,4 @@ article ul {
 article ul li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
-}
-
-/* Evita separação visual excessiva no topo do primeiro parágrafo */
-article > p:first-of-type {
-  margin-top: 0;
 }
