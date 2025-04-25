@@ -1,9 +1,11 @@
+/* Estilo geral da página de ponto */
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
+/* Container geral do conteúdo .md */
 article {
   background-color: rgba(255, 253, 248, 0.95);
   border-radius: 1rem;
@@ -12,22 +14,35 @@ article {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #432;
-  text-align: justify;
 }
 
-.fundamento-ponto {
-  max-width: 900px;
-  margin: 2rem auto;
-  background-color: rgba(255, 253, 248, 0.95);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: justify;
+/* Centraliza o título principal da página (o nome do ponto) */
+article h1 {
+  text-align: center;
+  color: #a87440;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Centraliza os subtítulos do .md (ex: Fundamento, Ouça o ponto) */
+article h2,
+article h3 {
+  text-align: center;
+  color: #a87440;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Letra do ponto cantado (primeiro bloco de parágrafo) */
+article p:first-of-type {
+  text-align: center;
+  white-space: pre-line;
   line-height: 1.8;
-  font-size: 1.05rem;
-  color: #432;
+  margin-bottom: 2rem;
 }
 
+/* Vídeo do ponto */
 .video-ponto {
   max-width: 800px;
   margin: 2rem auto;
@@ -36,3 +51,14 @@ article {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Estilo da lista (caso use bullets no fundamento) */
+article ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
