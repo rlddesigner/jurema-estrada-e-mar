@@ -40,9 +40,7 @@ const { title, estilo = "", folhas = false } = Astro.props;
     {estilo === 'bg-ere' && <link rel="stylesheet" href="/styles/oracoes/oracao-ere.css" />}
     {estilo === 'bg-exu' && <link rel="stylesheet" href="/styles/oracoes/oracao-exu.css" />}
     {estilo === 'bg-pombogira' && <link rel="stylesheet" href="/styles/oracoes/oracao-pombogira.css" />}
-
-<!-- CSS das páginas de ponto -->
-{classe === 'ponto' && <link rel="stylesheet" href="/ponto.css" />}
+    {estilo === 'ponto' && <link rel="stylesheet" href="/styles/ponto.css" />}
 
 
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
