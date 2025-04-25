@@ -44,10 +44,11 @@ article h3 {
 
 /* Letra do ponto cantado (primeiro bloco de parágrafo) */
 article p:first-of-type {
-  text-align: center;
+   text-align: center;
   white-space: pre-line;
-  line-height: 1.8;
-  margin-bottom: 2rem;
+  line-height: 1.4;
+  margin: 0.3rem 0; /* Reduz o espaço entre os versos */
+  font-size: 1.05rem;
 }
 
 /* Vídeo do ponto */
