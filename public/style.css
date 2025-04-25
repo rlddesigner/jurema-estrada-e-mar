@@ -200,7 +200,7 @@ footer .folhas-fixas img:nth-child(5) { bottom: 5px; left: 80%; transform: rotat
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.2rem; /* menos espaço entre os cards */
+  gap: 2rem; /* menos espaço entre os cards */
   max-width: 860px; /* <- esse é o segredo! */
   padding: 1rem;
 }
