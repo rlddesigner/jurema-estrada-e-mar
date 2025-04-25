@@ -42,7 +42,7 @@ const { title, estilo = "", folhas = false } = Astro.props;
     {estilo === 'bg-pombogira' && <link rel="stylesheet" href="/styles/oracoes/oracao-pombogira.css" />}
 
 <!-- CSS das páginas de ponto -->
-{classe?.startsWith('ponto-') && <link rel="stylesheet" href="/ponto.css" />}
+{classe === 'ponto' && <link rel="stylesheet" href="/ponto.css" />}
 
 
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
