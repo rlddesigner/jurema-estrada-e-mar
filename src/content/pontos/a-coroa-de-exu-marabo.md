@@ -10,7 +10,6 @@ seo:
   description: Letra e fundamento do ponto “A Coroa de Exu Marabô”, cantado nas giras de Umbanda com força e axé.
 ---
 
-
 Ventou no canavial  
 Um trovão lá no céu ecoou  
 Ventou no canavial  
