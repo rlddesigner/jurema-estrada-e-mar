@@ -1,0 +1,19 @@
+---
+const pontosFiltrados = (await getCollection('pontos')).filter(
+  (p) => p.data.classe === 'ponto de demanda'
+);
+---
+
+<Layout title="Pontos de Demanda">
+  <main class="pagina-ponto">
+    <h1>🕯️ Pontos de Demanda</h1>
+    <p class="descricao-classe">Pontos usados para proteção, quebra de demandas e movimentação de energia.</p>
+    <div class="grade-pontos">
+      {pontosFiltrados.map(({ data }) => (
+        <a href={`/pontos/${data.slug}`} class="card-ponto">
+          <h3>{data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>
