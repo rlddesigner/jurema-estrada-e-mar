@@ -1,3 +1,4 @@
+---
 layout: null
 title: "Oração para a fartura e prosperidade de Omolu"
 slug: "oracao-para-a-fartura-e-prosperidade-de-omolu"
@@ -13,7 +14,6 @@ folhas: true
 seo:
   title: "Oração para a fartura e prosperidade de Omolu"
   description: "Com esta oração, invoque a força de Omolu para trazer fartura, abrir caminhos e transformar carência em plenitude."
-
 ---
 
 Ó poderoso Omolu,  
