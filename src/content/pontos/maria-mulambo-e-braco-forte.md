@@ -1,7 +1,7 @@
 ---
-title: "Maria Mulambo é braço forte"
-slug: "maria-mulambo-e-braco-forte"
-pubDate: "2025-04-25"
+title: Maria Mulambo é braço forte
+slug: maria-mulambo-e-braco-forte
+pubDate: 2025-04-25
 classe: "ponto de demanda"
 estilo: "bg-ponto"
 seo:
