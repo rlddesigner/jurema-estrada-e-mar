@@ -3,8 +3,8 @@ layout: null
 title: A Coroa de Exu Marabô
 slug: a-coroa-de-exu-marabo
 pubDate: 2025-04-23
-classe: "ponto"
-estilo: ""
+classe: "Exu Marabo"
+estilo: "ponto"
 seo:
   title: Ponto de Exu Marabô – A Coroa
   description: Letra e fundamento do ponto “A Coroa de Exu Marabô”, cantado nas giras de Umbanda com força e axé.
