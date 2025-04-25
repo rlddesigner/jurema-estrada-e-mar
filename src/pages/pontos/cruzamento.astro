@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const todosPontos = await getCollection('pontos');
+const pontosFiltrados = todosPontos.filter(
+  (p) => p.data.classe === 'ponto de cruzamento'
+);
+---
+
+<Layout title="Pontos de Cruzamento" description="Cantos para firmeza, proteção e cruzamento das correntes espirituais.">
+  <main class="pagina-ponto">
+    <h1>🔗 Pontos de Cruzamento</h1>
+    <p class="descricao-classe">Pontos usados para proteger o trabalho espiritual, fortalecer firmezas e cruzar energias de luz.</p>
+
+    <div class="grade-pontos">
+      {pontosFiltrados.map(({ data }) => (
+        <a href={`/pontos/${data.slug}`} class="card-ponto">
+          <h3>{data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>
