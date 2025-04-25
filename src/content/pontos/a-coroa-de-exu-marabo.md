@@ -10,14 +10,14 @@ seo:
   description: Letra e fundamento do ponto “A Coroa de Exu Marabô”, cantado nas giras de Umbanda com força e axé.
 ---
 
-Ventou no canavial  
-Um trovão lá no céu ecoou  
-Ventou no canavial  
+Ventou no canavial
+Um trovão lá no céu ecoou
+Ventou no canavial
 Um trovão lá no céu ecoou
 
-Salve Iansã e Xangô  
-Salve a Coroa de Exu Marabô  
-Salve Iansã e Xangô  
+Salve Iansã e Xangô
+Salve a Coroa de Exu Marabô
+Salve Iansã e Xangô
 Salve a Coroa de Exu Marabô
 
 ---
