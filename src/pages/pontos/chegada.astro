@@ -1,14 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-const pontosFiltrados = (await getCollection('pontos')).filter(
+import { getCollection } from 'astro:content';
+
+const todosPontos = await getCollection('pontos');
+const pontosFiltrados = todosPontos.filter(
   (p) => p.data.classe === 'ponto de chegada'
 );
 ---
 
-<Layout title="Pontos de Chegada">
+<Layout title="Pontos de Chegada" description="Cantos de chegada das entidades, marcando sua presença e força no trabalho espiritual.">
   <main class="pagina-ponto">
     <h1>✨ Pontos de Chegada</h1>
     <p class="descricao-classe">Cantos que marcam a chegada das entidades no terreiro, firmando sua presença e força espiritual.</p>
+
     <div class="grade-pontos">
       {pontosFiltrados.map(({ data }) => (
         <a href={`/pontos/${data.slug}`} class="card-ponto">
