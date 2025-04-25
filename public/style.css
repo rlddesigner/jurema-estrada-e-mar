@@ -398,19 +398,6 @@ main.pagina-ensinamento article {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
 }
-.video-ponto {
-  max-width: 800px;
-  margin: 2rem auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-.layout-pontos {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
 
 .lista-lateral {
   background: #fffdf8;
