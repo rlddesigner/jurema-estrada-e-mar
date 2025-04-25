@@ -43,18 +43,6 @@ const { title, estilo = "", folhas = false } = Astro.props;
 
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet" />
 
----
-const { title, description, classe } = Astro.props;
----
-
-<head>
-  <title>{title}</title>
-  <meta name="description" content={description} />
-  {classe && <link rel="stylesheet" href={`/css/${classe}.css`} />}
-</head>
-
-  </head>
-
   <body class={`pagina-oracao ${estilo}`}>
     <Header />
 
