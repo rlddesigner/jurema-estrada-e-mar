@@ -11,8 +11,8 @@ seo:
   description: Ponto cantado para Mariana, Herondina e Toya Jarina. Conheça sua letra e seu significado espiritual.
 ---
 
-> Eram três irmãs da língua ferina  
-> Uma é Mariana, a outra é Herondina  
+> Eram três irmãs da língua ferina
+> Uma é Mariana, a outra é Herondina
 > E uma rosa, que é Toya Jarina
 
 ---
