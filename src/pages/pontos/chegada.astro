@@ -1,4 +1,5 @@
 ---
+import Layout from '../../layouts/Layout.astro';
 const pontosFiltrados = (await getCollection('pontos')).filter(
   (p) => p.data.classe === 'ponto de chegada'
 );
