@@ -1,0 +1,19 @@
+---
+const pontosFiltrados = (await getCollection('pontos')).filter(
+  (p) => p.data.classe === 'ponto de chegada'
+);
+---
+
+<Layout title="Pontos de Chegada">
+  <main class="pagina-ponto">
+    <h1>✨ Pontos de Chegada</h1>
+    <p class="descricao-classe">Cantos que marcam a chegada das entidades no terreiro, firmando sua presença e força espiritual.</p>
+    <div class="grade-pontos">
+      {pontosFiltrados.map(({ data }) => (
+        <a href={`/pontos/${data.slug}`} class="card-ponto">
+          <h3>{data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>
