@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const todosPontos = await getCollection('pontos');
+const pontosFiltrados = todosPontos.filter(
+  (p) => p.data.classe === 'ponto de abertura'
+);
+---
+
+<Layout title="Pontos de Abertura" description="Cantos de abertura dos trabalhos espirituais e preparação do ambiente.">
+  <main class="pagina-ponto">
+    <h1>🚪 Pontos de Abertura</h1>
+    <p class="descricao-classe">Pontos usados no início das giras para preparar, limpar e abrir os caminhos espirituais.</p>
+
+    <div class="grade-pontos">
+      {pontosFiltrados.map(({ data }) => (
+        <a href={`/pontos/${data.slug}`} class="card-ponto">
+          <h3>{data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>
