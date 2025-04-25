@@ -1,0 +1,19 @@
+---
+const pontosFiltrados = (await getCollection('pontos')).filter(
+  (p) => p.data.classe === 'ponto de exu'
+);
+---
+
+<Layout title="Pontos de Exu">
+  <main class="pagina-ponto">
+    <h1>🔴 Pontos de Exu</h1>
+    <p class="descricao-classe">Chamados e louvações às entidades da esquerda, regentes da noite, das encruzilhadas e dos caminhos.</p>
+    <div class="grade-pontos">
+      {pontosFiltrados.map(({ data }) => (
+        <a href={`/pontos/${data.slug}`} class="card-ponto">
+          <h3>{data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </main>
+</Layout>
