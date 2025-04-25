@@ -13,12 +13,25 @@ article {
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  font-size: 1.05rem;
-  line-height: 0.7;
   color: #432;
+  font-size: 1.05rem;
+  line-height: 1.7; /* Para o conteúdo corrido */
 }
 
-/* Título principal da página (nome do ponto) */
+/* 🎶 Versos do ponto (cada linha como <p>) */
+article p {
+  text-align: center;
+  white-space: pre-line;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin: 0.3rem 0;
+}
+
+article p:first-of-type {
+  margin-top: 0;
+}
+
+/* Título principal (nome do ponto) */
 article h1 {
   text-align: center;
   color: #a87440;
@@ -26,7 +39,7 @@ article h1 {
   margin-bottom: 2rem;
 }
 
-/* Subtítulos do ponto (ex: Fundamento, Ouça esse ponto) */
+/* Subtítulos (Fundamento, Ouça o ponto, etc) */
 article h2,
 article h3 {
   text-align: center;
@@ -35,7 +48,8 @@ article h3 {
   margin-top: 2rem;
   margin-bottom: 1.2rem;
 }
-/* 🎧 Bloco de vídeo */
+
+/* Bloco de vídeo */
 .video-ponto {
   max-width: 800px;
   margin: 2rem auto;
@@ -44,7 +58,7 @@ article h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Listas no fundamento */
+/* Lista com bullets no fundamento */
 article ul {
   padding-left: 1.2rem;
   margin: 1.2rem 0;
