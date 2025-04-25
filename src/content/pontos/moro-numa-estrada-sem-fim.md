@@ -3,7 +3,7 @@ title: "Moro Numa Estrada Sem Fim"
 slug: "moro-numa-estrada-sem-fim"
 pubDate: 2025-04-25
 classe: "Ponto de Exu"
-estilo: "Cântico de encantamento"
+estilo: "bg-ponto"
 seo: "Ponto cantado para Maria Padilha da Estrada com letra e vídeo. Umbanda, Exu, encantamento e fundamentos espirituais."
 ---
 
