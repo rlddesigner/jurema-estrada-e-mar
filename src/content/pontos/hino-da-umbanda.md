@@ -3,7 +3,7 @@ layout: null
 title: Hino da Umbanda
 slug: hino-da-umbanda
 pubDate: 2025-04-30
-estilo: ""
+estilo: "bg-ponto"
 folhas: false
 seo:
   title: Hino da Umbanda
