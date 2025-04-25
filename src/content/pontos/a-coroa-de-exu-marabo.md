@@ -3,7 +3,7 @@ layout: null
 title: A Coroa de Exu Marabô
 slug: a-coroa-de-exu-marabo
 pubDate: 2025-04-23
-classe: "Exu Marabo"
+classe: "ponto de saudação"
 estilo: "bg-ponto"
 seo:
   title: Ponto de Exu Marabô – A Coroa
