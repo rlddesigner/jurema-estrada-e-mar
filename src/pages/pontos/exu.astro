@@ -1,14 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-const pontosFiltrados = (await getCollection('pontos')).filter(
+import { getCollection } from 'astro:content';
+
+const todosPontos = await getCollection('pontos');
+const pontosFiltrados = todosPontos.filter(
   (p) => p.data.classe === 'ponto de exu'
 );
 ---
 
-<Layout title="Pontos de Exu">
+<Layout title="Pontos de Exu" description="Louvação e firmeza para Exus e Pombagiras na Umbanda.">
   <main class="pagina-ponto">
     <h1>🔴 Pontos de Exu</h1>
     <p class="descricao-classe">Chamados e louvações às entidades da esquerda, regentes da noite, das encruzilhadas e dos caminhos.</p>
+
     <div class="grade-pontos">
       {pontosFiltrados.map(({ data }) => (
         <a href={`/pontos/${data.slug}`} class="card-ponto">
