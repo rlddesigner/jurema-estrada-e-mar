@@ -1,21 +1,24 @@
-/* Estilo geral da página de ponto */
+/* ===============================
+   🌿 Estilo geral da página de ponto
+   =============================== */
+
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
-/* Container geral do conteúdo .md */
+
 article {
   background-color: rgba(255, 253, 248, 0.95);
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   font-size: 1.05rem;
-   line-height: 1.4; /* <- aqui está o ajuste! */
+  line-height: 1.7;
   color: #432;
 }
 
-/* Centraliza o título principal da página (o nome do ponto) */
+/* Título principal da página (nome do ponto) */
 article h1 {
   text-align: center;
   color: #a87440;
@@ -23,31 +26,35 @@ article h1 {
   margin-bottom: 2rem;
 }
 
-/* Centraliza os subtítulos do .md (ex: Fundamento, Ouça o ponto) */
+/* Subtítulos do ponto (ex: Fundamento, Ouça esse ponto) */
 article h2,
 article h3 {
   text-align: center;
   color: #a87440;
   font-size: 1.4rem;
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
-/* Letra do ponto cantado (primeiro bloco de parágrafo) */
-article > p {
+/* 🎶 Letra do ponto (único <p> com quebras de linha manuais) */
+article p:first-of-type {
   text-align: center;
   white-space: pre-line;
-  line-height: 1.4;
-  margin: 0.3rem 0;
+  line-height: 1.6;
+  margin-bottom: 2rem;
   font-size: 1.05rem;
 }
 
-article > p:first-of-type {
-  margin-top: 0 !important;
+/* Caso cada verso esteja em parágrafos separados */
+article > p:not(:first-of-type):not(:has(strong)):not(:has(em)):not(:has(code)) {
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.4;
+  margin: 0.2rem 0;
+  font-size: 1.05rem;
 }
 
-
-/* Vídeo do ponto */
+/* 🎧 Bloco de vídeo */
 .video-ponto {
   max-width: 800px;
   margin: 2rem auto;
@@ -56,14 +63,18 @@ article > p:first-of-type {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo da lista (caso use bullets no fundamento) */
+/* Listas no fundamento */
 article ul {
   padding-left: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1.2rem 0;
 }
 
 article ul li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+}
+
+/* Evita separação visual excessiva no topo do primeiro parágrafo */
+article > p:first-of-type {
+  margin-top: 0;
 }
