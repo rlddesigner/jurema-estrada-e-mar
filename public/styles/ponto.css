@@ -18,9 +18,4 @@ body.ponto {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-.layout-pontos {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
+
