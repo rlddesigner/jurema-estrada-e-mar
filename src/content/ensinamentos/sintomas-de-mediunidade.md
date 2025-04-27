@@ -5,6 +5,7 @@ slug: sintomas-de-mediunidade
 description: Conheça os principais sinais físicos, emocionais e espirituais que indicam o despertar da mediunidade.
 image: /imagens/ensinamento-sintomas-mediunidade.jpg
 classe: "ensinamento-mediunidade"
+categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
   title: Sintomas de mediunidade em desenvolvimento
