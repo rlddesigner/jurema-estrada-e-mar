@@ -3,7 +3,6 @@ layout: null
 title: Nesta Casa Tem uma Rosa
 slug: nesta-casa-tem-uma-rosa
 description: Um ponto que reverencia a beleza espiritual e a força encantadora das águas e das flores sagradas.
-image: /images/ponto-default.jpg
 categoria: ponto
 classe: Pontos de Chegada
 estilo: bg-ponto
