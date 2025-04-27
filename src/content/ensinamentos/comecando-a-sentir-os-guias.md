@@ -5,6 +5,7 @@ slug: comecando-a-sentir-os-guias
 description: Saiba como agir com equilíbrio e respeito quando você começa a perceber a presença dos seus guias espirituais.
 image: /imagens/ensinamento-sentir-guias.jpg
 classe: "ensinamento-mediunidade"
+categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
   title: O que fazer quando começo a sentir os guias?
