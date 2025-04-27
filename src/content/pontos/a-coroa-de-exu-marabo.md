@@ -2,13 +2,18 @@
 layout: null
 title: A Coroa de Exu Marabô
 slug: a-coroa-de-exu-marabo
-pubDate: 2025-04-23
-classe: "ponto de saudação"
+description: Conheça a letra do ponto cantado para Exu Marabô, exaltando sua força e proteção nas giras de Umbanda.
+image: "/imagens/ponto-exu-marabo.jpg"
+categoria: "ponto"
+classe: "ponto-de-saudacao"
 estilo: "bg-ponto"
+tags: ["exu", "exu marabô", "ponto de umbanda", "gira", "proteção", "axé"]
+pubDate: "2025-04-23"
 seo:
   title: Ponto de Exu Marabô – A Coroa
   description: Letra e fundamento do ponto “A Coroa de Exu Marabô”, cantado nas giras de Umbanda com força e axé.
 ---
+
 
 Ventou no canavial
 Um trovão lá no céu ecoou
