@@ -5,6 +5,7 @@ slug: posso-acender-vela-pra-exu-em-casa
 description: Descubra se é seguro e adequado acender vela pra Exu dentro ou fora de casa, com respeito, fundamento e proteção espiritual.
 image: /imagens/ensinamento-vela-exu.jpg
 classe: "ensinamento-exu"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Posso acender vela pra Exu em casa?"
