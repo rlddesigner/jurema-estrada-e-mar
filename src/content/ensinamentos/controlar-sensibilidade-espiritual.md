@@ -5,6 +5,7 @@ slug: controlar-sensibilidade-espiritual
 description: Aprenda formas práticas de lidar com a sensibilidade espiritual e manter seu equilíbrio energético.
 image: /imagens/ensinamento-controle-sensibilidade.jpg
 classe: "ensinamento-mediunidade"
+categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
   title: Como controlar minha sensibilidade espiritual
