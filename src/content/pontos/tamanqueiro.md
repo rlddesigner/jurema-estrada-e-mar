@@ -1,13 +1,19 @@
 ---
+layout: null
 title: "Tamanqueiro"
 slug: "tamanqueiro"
-pubDate: 2025-04-26
+description: "Letra e fundamento espiritual do ponto cantado Tamanqueiro, puxado por Dona Mulambo, exaltando a firmeza do caminhar e a magia dos caminhos na Umbanda."
+image: "/imagens/ponto-tamanqueiro.jpg"
+categoria: "ponto"
 classe: "ponto de firmeza e transformação"
 estilo: "bg-ponto"
+tags: ["dona mulambo", "tamanqueiro", "umbanda", "firmeza espiritual", "ponto de transformação", "caminhos espirituais"]
+pubDate: "2025-04-26"
 seo:
   title: "Ponto Cantado | Tamanqueiro - Dona Mulambo"
   description: "Ponto cantado puxado por Dona Mulambo, trazendo a firmeza do caminhar, a magia das cores e o despertar da consciência nos caminhos da vida."
 ---
+
 
 Eu quero 1, eu quero 2, eu quero 3 tamanqueiro  
 Daqueles encomendei tamanqueiro...  
