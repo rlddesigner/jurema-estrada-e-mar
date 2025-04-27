@@ -1,6 +1,7 @@
 ---
 import { getEntryBySlug, getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import Seo from '../../components/Seo.astro'; // 👈 importa o componente SEO aqui
 
 export async function getStaticPaths() {
   const posts = await getCollection('oracoes');
@@ -12,8 +13,10 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-
 const { title, description, image, estilo } = post.data;
+
+// Gera a URL completa do post
+const url = `https://juremaestradaemar.netlify.app/oracoes/${post.slug}`;
 ---
 
 <Layout 
@@ -22,6 +25,12 @@ const { title, description, image, estilo } = post.data;
   estilo={estilo}
   folhas={estilo === "folhas-caindo"}
 >
+
+<!-- Adiciona o SEO dentro do Layout, na área do <head> -->
+  <head>
+    <Seo title={title} description={description} url={url} image={image} />
+  </head>
+
   <main class={`pagina-oracao ${post.data.classe}`}>
     {image && <img src={image} alt={title} class="capa-oracao" />}
     <h1>{title}</h1>
