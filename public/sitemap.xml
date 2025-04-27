@@ -1,28 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://juremaestradaemar.netlify.app/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juremaestradaemar.netlify.app/oracoes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juremaestradaemar.netlify.app/pontos/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juremaestradaemar.netlify.app/ensinamentos/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juremaestradaemar.netlify.app/ensinamentos/7-sinais-missao-espiritual/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juremaestradaemar.netlify.app/pontos/iansa-tem-um-leque-de-pena/</loc>
-  </url>
+  <!-- Páginas principais -->
+  <url><loc>https://juremaestradaemar.netlify.app/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/sobre/</loc></url>
+
+  <!-- Ensinamentos (posts) -->
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/7-sinais-missao-espiritual/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/comecando-a-sentir-os-guias/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-a-umbanda-surgiu/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-e-feita-consulta-com-guia/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-firmar-vela-pro-anjo-da-guarda/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-montar-altar-umbanda/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-saber-meu-orixa-de-cabeca/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-saber-meu-orixa/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-saber-se-tenho-mediunidade/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/como-tomar-banho-de-descarrego/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/controlar-sensibilidade-espiritual/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/diferenca-entre-alma-espirito-e-guia/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/diferenca-entre-orixas-e-guias/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/diferenca-entre-xango-e-ogum/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/forca-de-iemanja/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/iansa-e-mudancas/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/incorporacao-vs-intuicao/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/mediuns-de-exu-marabo/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/o-que-acontece-numa-gira/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/o-que-e-firmeza-de-exu/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/o-que-e-o-tambor-na-umbanda/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/o-que-e-pombagira/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/o-que-e-umbanda/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/o-que-fazer-com-oferendas-depois/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/posso-acender-vela-pra-exu-em-casa/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/posso-estudar-umbanda-pela-internet/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/posso-ir-ao-terreiro-sem-ser-medium/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/posso-mudar-de-terreiro/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/preciso-vestir-branco-no-terreiro/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/quem-e-exu/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/sintomas-de-mediunidade/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/sonhei-com-exu/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/umbanda-e-candomble-sao-a-mesma-coisa/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/ensinamentos/umbanda-sem-incorporacao/</loc></url>
+
+  <!-- Orações -->
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-amor-docura-oxum/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-caminhos-abertos-exu/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-coragem-batalhas-ogum/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-equilibrio-aguas-iemanja/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-forca-dos-ventos-de-iansa/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-iansa-movimento/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-justica-divina-xango/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-nana-purificacao-emocional/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-oxum-autoestima/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-para-a-fartura-e-prosperidade-de-omolu/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-renovacao-saude-oxossi/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-sabedoria-ancestral-nana/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/oracoes/oracao-xango-justica/</loc></url>
+
+  <!-- Pontos Cantados -->
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/a-coroa-de-exu-marabo/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/as-tres-irmas-encantadas/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/coque-dos-caboclos/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/hino-da-umbanda/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/iansa-tem-um-leque-de-pena/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/maria-mulambo-com-muito-prazer/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/maria-mulambo-e-braco-forte/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/maria-padilha-da-estrada-chegou/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/moro-numa-estrada-sem-fim/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/se-eu-pegar-seu-ze-pelintara/</loc></url>
+  <url><loc>https://juremaestradaemar.netlify.app/pontos/tamanqueiro/</loc></url>
 
 </urlset>
