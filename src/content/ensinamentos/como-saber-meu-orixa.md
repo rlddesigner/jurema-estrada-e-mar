@@ -5,6 +5,7 @@ slug: como-saber-meu-orixa
 description: Descubra os primeiros sinais de ligação com um orixá e entenda como esse reconhecimento acontece na espiritualidade.
 image: /imagens/ensinamento-filho-orixa.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
   title: Como saber se sou filho de algum orixá?
