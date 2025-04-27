@@ -1,11 +1,19 @@
 ---
+layout: null
 title: "Maria Padilha da Estrada chegou"
 slug: "maria-padilha-da-estrada-chegou"
-pubDate: 2025-04-25
-classe: "Ponto de chegada"
+description: "Letra e significado espiritual do ponto de chegada para Maria Padilha da Estrada, destacando elementos da lua, rua e encruzilhada nas giras de Umbanda."
+image: "/imagens/ponto-maria-padilha-da-estrada.jpg"
+categoria: "ponto"
+classe: "maria-padilha-da-estrada-chegou"
 estilo: "bg-ponto"
-seo: "Ponto cantado de chegada para Maria Padilha da Estrada, com elementos simbólicos da lua, rua e encruzilhada. Ponto original recebido mediunicamente."
+tags: ["pombagira", "maria padilha", "ponto de chegada", "umbanda", "encruzilhada", "gira"]
+pubDate: "2025-04-25"
+seo:
+  title: "Ponto de Maria Padilha da Estrada | Chegada, Lua e Encruzilhada"
+  description: "Ponto cantado de chegada para Maria Padilha da Estrada, com elementos simbólicos da lua, rua e encruzilhada. Ponto original recebido mediunicamente."
 ---
+
 
 A lua brilhou  
 A rua clareou  
