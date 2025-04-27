@@ -5,6 +5,7 @@ slug: posso-mudar-de-terreiro
 description: Entenda se é possível mudar de terreiro dentro da Umbanda, quando isso é necessário e como fazer com respeito espiritual.
 image: /imagens/ensinamento-mudanca-terreiro.jpg
 classe: "ensinamento-caminho"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Posso mudar de terreiro?"
