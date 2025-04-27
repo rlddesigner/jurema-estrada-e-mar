@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import Seo from '../components/Seo.astro';
 
 // Últimas orações
 const oracoes = await getCollection('oracoes');
@@ -29,6 +30,15 @@ const pontosRecentes = pontos
   description="Bem-vinde ao Jurema, Estrada e Mar – um espaço espiritual com orações, pontos cantados e ensinamentos guiados por luz e axé."
 >
   <main class="inicio">
+
+<html lang="pt-BR">
+  <head>
+    <Seo 
+      title="Jurema Estrada e Mar - Ensinamentos de Umbanda"
+      description="Conheça ensinamentos, fundamentos e sabedorias da Umbanda através da Jurema, da Estrada e do Mar. Um espaço para estudos, fé e espiritualidade."
+      url="https://juremaestradaemar.netlify.app/"
+    />
+  </head>
 
 <!-- 🌿 Carrossel de Curiosidades Espirituais (UMBANDA) -->
 <section class="curiosidades-carrossel">
