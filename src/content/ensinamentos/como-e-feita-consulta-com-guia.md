@@ -5,6 +5,7 @@ slug: como-e-feita-consulta-com-guia
 description: Saiba o que esperar e como se preparar para uma consulta com um guia espiritual na Umbanda.
 image: /imagens/ensinamento-consulta-com-guia.jpg
 classe: "ensinamento-umbanda"
+categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
   title: "Como é feita uma consulta com guia espiritual?"

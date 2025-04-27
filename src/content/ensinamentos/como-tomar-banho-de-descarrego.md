@@ -5,6 +5,7 @@ slug: como-tomar-banho-de-descarrego
 description: Aprenda o passo a passo para fazer um banho de descarrego espiritual com segurança, fundamento e axé.
 image: /imagens/ensinamento-banho-descarrego.jpg
 classe: "ensinamento-protecao"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Como tomar banho de descarrego corretamente"

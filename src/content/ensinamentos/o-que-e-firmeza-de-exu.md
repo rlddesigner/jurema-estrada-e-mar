@@ -5,6 +5,7 @@ slug: o-que-e-firmeza-de-exu
 description: Entenda o que é uma firmeza de Exu, qual sua função na Umbanda e como ela atua na proteção e na conexão espiritual.
 image: /imagens/ensinamento-firmeza-exu.jpg
 classe: "ensinamento-protecao"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "O que é firmeza de Exu?"

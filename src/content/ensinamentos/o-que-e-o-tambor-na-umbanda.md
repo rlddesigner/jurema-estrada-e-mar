@@ -5,6 +5,7 @@ slug: o-que-e-o-tambor-na-umbanda
 description: Descubra o que é o tambor ou atabaque na Umbanda, como ele é feito e por que é considerado um instrumento sagrado nos rituais espirituais.
 image: /imagens/ensinamento-tambor-atabaque.jpg
 classe: "ensinamento-fundamentos"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "O que é o tambor (atabaque) na Umbanda?"

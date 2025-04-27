@@ -5,6 +5,7 @@ slug: 7-sinais-missao-espiritual
 description: Descubra os principais sinais que indicam que você tem uma missão espiritual na Terra e como começar a compreender esse chamado.
 image: /imagens/ensinamento-missao-espiritual.jpg
 classe: "ensinamento-autoconhecimento"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "7 sinais que indicam que você tem missão espiritual"

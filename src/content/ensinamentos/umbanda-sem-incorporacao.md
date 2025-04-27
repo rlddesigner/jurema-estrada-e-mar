@@ -5,6 +5,7 @@ slug: umbanda-sem-incorporacao
 description: Entenda se é possível praticar Umbanda mesmo sem incorporar entidades espirituais. 
 image: /imagens/ensinamento-umbanda-sem-incorporacao.jpg
 classe: "ensinamento-conhecimento"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Existe Umbanda sem incorporação?"

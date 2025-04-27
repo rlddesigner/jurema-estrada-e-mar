@@ -1,13 +1,19 @@
 ---
+layout: null
 title: "Coquê dos Caboclos"
 slug: "coque-dos-caboclos"
-pubDate: "2025-04-25"
+description: "Letra e significado espiritual do ponto Coquê dos Caboclos, saudando a força e a proteção dos Caboclos na Umbanda."
+image: "/imagens/ponto-coque-dos-caboclos.jpg"
+categoria: "ponto"
 classe: "ponto de saudação"
 estilo: "bg-ponto"
+tags: ["caboclos", "umbanda", "ponto de saudação", "força da natureza", "gira", "espiritualidade"]
+pubDate: "2025-04-25"
 seo:
   title: "Ponto de Saudação - Coquê dos Caboclos"
   description: "Ponto cantado de saudação aos Caboclos da mata, reverenciando a força natural e espiritual simbolizada pelo canto do coral."
 ---
+
 
 Lá no pé daquela serra  
 Onde mora meus caboclos  

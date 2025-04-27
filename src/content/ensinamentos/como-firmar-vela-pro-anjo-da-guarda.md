@@ -5,6 +5,7 @@ slug: como-firmar-vela-pro-anjo-da-guarda
 description: Aprenda o passo a passo para firmar vela pro seu anjo da guarda com fé, segurança e conexão espiritual.
 image: /imagens/ensinamento-vela-anjo-da-guarda.jpg
 classe: "ensinamento-protecao"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Como firmar vela pro anjo da guarda"

@@ -1,13 +1,20 @@
 ---
-title: Maria Mulambo é braço forte
-slug: maria-mulambo-e-braco-forte
-pubDate: 2025-04-25
+layout: null
+title: "Maria Mulambo é braço forte"
+slug: "maria-mulambo-e-braco-forte"
+description: "Letra e fundamento espiritual do ponto de Maria Mulambo, exaltando sua força na esquerda, domínio sobre as trevas e poder de transformação."
+image: "/imagens/ponto-maria-mulambo-braco-forte.jpg"
+categoria: "ponto"
 classe: "ponto de demanda"
 estilo: "bg-ponto"
+tags: ["pombagira", "maria mulambo", "ponto de demanda", "umbanda", "força espiritual", "proteção"]
+pubDate: "2025-04-25"
 seo:
   title: "Ponto de Pombagira Maria Mulambo | Braço forte, senhora da esquerda"
   description: "Ponto cantado de força para Maria Mulambo, revelando seu poder de transmutação, justiça e domínio sobre as trevas. Compreenda o verdadeiro fundamento espiritual por trás da letra."
 ---
+
+
 
 E Maria Mulambo é braço forte, mas também é perna dura  
 É de cavar sepultura do povo que vem de lá.  

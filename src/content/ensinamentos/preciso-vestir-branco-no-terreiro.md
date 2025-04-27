@@ -5,6 +5,7 @@ slug: preciso-vestir-branco-no-terreiro
 description: Descubra se é necessário usar roupas brancas para participar de uma gira de Umbanda e entenda o significado por trás dessa tradição.
 image: /imagens/ensinamento-vestir-branco.jpg
 classe: "ensinamento-umbanda"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Preciso vestir branco pra ir ao terreiro?"

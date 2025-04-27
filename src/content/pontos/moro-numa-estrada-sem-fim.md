@@ -1,11 +1,19 @@
 ---
+layout: null
 title: "Moro Numa Estrada Sem Fim"
 slug: "moro-numa-estrada-sem-fim"
-pubDate: 2025-04-25
+description: "Letra e significado espiritual do ponto cantado para Maria Padilha da Estrada, exaltando sua força nos caminhos e encruzilhadas da vida."
+image: "/imagens/ponto-moro-numa-estrada-sem-fim.jpg"
+categoria: "ponto"
 classe: "Ponto de Exu"
 estilo: "bg-ponto"
-seo: "Ponto cantado para Maria Padilha da Estrada com letra e vídeo. Umbanda, Exu, encantamento e fundamentos espirituais."
+tags: ["maria padilha", "exu", "umbanda", "ponto de exu", "gira", "estrada sem fim"]
+pubDate: "2025-04-25"
+seo:
+  title: "Ponto para Maria Padilha da Estrada | Encantamento e Caminhos"
+  description: "Ponto cantado para Maria Padilha da Estrada com letra e significado espiritual. Exalte a força dos caminhos, da encruzilhada e da estrada sem fim na Umbanda."
 ---
+
 
 Vinha caminhando pela rua  
 Quando uma moça bonita eu vi  

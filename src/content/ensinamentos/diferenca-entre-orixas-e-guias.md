@@ -5,6 +5,7 @@ slug: diferenca-entre-orixas-e-guias
 description: Entenda a diferença entre Orixás e Guias espirituais dentro da Umbanda e o papel de cada um na sua jornada.
 image: /imagens/ensinamento-orixas-e-guias.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Diferença entre Orixás e Guias"
