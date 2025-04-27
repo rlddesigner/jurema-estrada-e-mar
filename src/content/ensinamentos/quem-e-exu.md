@@ -5,6 +5,7 @@ slug: quem-e-exu
 description: Conheça Exu dentro da Umbanda, sua verdadeira função espiritual e por que ele é tão mal compreendido.
 image: /imagens/ensinamento-quem-e-exu.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Quem é Exu? Exu é do bem?"
