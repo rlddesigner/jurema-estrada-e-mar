@@ -5,6 +5,7 @@ slug: como-saber-meu-orixa-de-cabeca
 description: Entenda como é feito o reconhecimento do seu orixá de cabeça na Umbanda e por que esse processo exige tempo e entrega.
 image: /imagens/ensinamento-orixa-de-cabeca.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Como saber meu orixá de cabeça?"
