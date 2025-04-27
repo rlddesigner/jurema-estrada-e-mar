@@ -1,13 +1,19 @@
 ---
+layout: null
 title: "Iansã Tem um Leque de Pena"
 slug: "iansa-tem-um-leque-de-pena"
-pubDate: "2025-04-26"
-classe: "ponto de saudação"
+description: "Letra e significado do ponto cantado de saudação a Iansã e Xangô, celebrando a força dos ventos e a justiça divina na Umbanda."
+image: "/imagens/ponto-iansa-leque-de-pena.jpg"
+categoria: "ponto"
+classe: "iansa-tem-um-leque-de-pena"
 estilo: "bg-ponto"
+tags: ["iansã", "xangô", "ponto de umbanda", "ventos", "justiça", "orixás", "gira"]
+pubDate: "2025-04-26"
 seo:
   title: "Iansã Tem um Leque de Pena - Ponto de Saudação a Iansã e Xangô na Umbanda"
   description: "Ponto cantado de saudação a Iansã e Xangô, exaltando a força dos ventos e a justiça das pedreiras. Celebre a energia vibrante dos Orixás com este cântico de devoção."
 ---
+
 
 Iansã tem um leque de pena  
 Para abanar dias de calor  
