@@ -5,6 +5,7 @@ slug: forca-de-iemanja
 description: Descubra como a energia de Iemanjá atua nos banhos espirituais e nas orações de fé, trazendo cura emocional e proteção.
 image: /imagens/ensinamento-iemanja.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "A força de Iemanjá nos banhos e orações"
