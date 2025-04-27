@@ -5,7 +5,7 @@ slug: "maria-mulambo-com-muito-prazer"
 description: "Letra e significado espiritual do ponto que saúda Maria Mulambo, senhora da lixeira e símbolo de transformação nas giras de Umbanda."
 image: "/imagens/ponto-maria-mulambo-com-muito-prazer.jpg"
 categoria: "ponto"
-classe: "maria-mulambo-com-muito-prazer"
+classe: "ponto de saudação"
 estilo: "bg-ponto"
 tags: ["pombagira", "maria mulambo", "umbanda", "ponto de saudação", "transformação", "gira"]
 pubDate: "2025-04-25"
@@ -13,6 +13,7 @@ seo:
   title: "Ponto de Pombagira Maria Mulambo | Lixeira e Realeza Espiritual"
   description: "Conheça o ponto cantado que exalta a força de Maria Mulambo, senhora da lixeira e da transformação. Entenda a diferença entre as vibrações do lixo e da lixeira no culto das Pombagiras."
 ---
+
 
 
 Quem não lhe conhece, vai lhe conhecer  
