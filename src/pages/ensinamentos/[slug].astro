@@ -13,7 +13,11 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const { title, description, image, estilo } = post.data;
+const { title, description, image, estilo, seo } = post.data;
+
+// Se tiver campos "seo.title" e "seo.description", usa eles. Se não, usa os normais.
+const seoTitle = seo?.title || title;
+const seoDescription = seo?.description || description;
 
 // Gera a URL completa do post
 const url = `https://juremaestradaemar.netlify.app/ensinamentos/${post.slug}`;
@@ -28,7 +32,7 @@ const url = `https://juremaestradaemar.netlify.app/ensinamentos/${post.slug}`;
 
  <!-- Adiciona o SEO dentro do Layout, na área do <head> -->
   <head>
-    <Seo title={title} description={description} url={url} image={image} />
+    <Seo title={seoTitle} description={seoDescription} url={url} image={image} />
   </head>
 
 <main class={`pagina-ensinamento ${post.data.classe}`}>
