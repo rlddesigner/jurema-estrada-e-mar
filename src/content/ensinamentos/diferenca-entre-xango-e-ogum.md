@@ -5,6 +5,7 @@ slug: diferenca-entre-xango-e-ogum
 description: Entenda as diferenças entre Xangô e Ogum, dois Orixás de grande força e importância na Umbanda.
 image: /imagens/ensinamento-xango-ogum.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Diferença entre Xangô e Ogum"
