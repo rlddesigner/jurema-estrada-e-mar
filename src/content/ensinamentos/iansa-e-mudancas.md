@@ -5,6 +5,7 @@ slug: iansa-e-mudancas
 description: Descubra como a força de Iansã atua nas transformações da vida, ajudando a cortar o passado e abrir novos caminhos com coragem.
 image: /imagens/ensinamento-iansa.jpg
 classe: "ensinamento-orixas"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "A atuação de Iansã nas mudanças de vida"
