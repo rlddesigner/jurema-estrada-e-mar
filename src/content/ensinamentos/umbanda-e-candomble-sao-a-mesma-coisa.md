@@ -5,6 +5,7 @@ slug: umbanda-e-candomble-sao-a-mesma-coisa
 description: Entenda com profundidade as diferenças e semelhanças entre Umbanda e Candomblé, duas religiões afro-brasileiras que carregam ancestralidade, espiritualidade e muita força.
 image: /imagens/ensinamento-umbanda-candomble.jpg
 classe: "ensinamento-consciencia"
+categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
   title: "Umbanda e Candomblé são a mesma coisa?"
