@@ -45,17 +45,17 @@ const ultimosPontos = todosPontos
     </article>
 
     {ultimosPontos.length > 0 && (
-      <section class="ultimos-pontos">
-        <h2>🎶 Últimos Pontos Cantados</h2>
-         <div class="grade-oracoes home">
-       {ultimosPontos.map(({ data }) => (
-            <a href={`/pontos/${data.slug}`} class="card-oracao">
-              {data.image && <img src={data.image} alt={data.title} />}
-              <h3>{data.title}</h3>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
+  <section class="ultimos-pontos">
+    <h2>🎶 Últimos Pontos Cantados</h2>
+    <div class="grade-oracoes home">
+      {ultimosPontos.map(({ data }) => (
+        <a href={`/pontos/${data.slug}`} class="card-oracao">
+          {data.image && <img src={data.image} alt={data.title} />}
+          <h3>{data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
   </main>
 </Layout>
