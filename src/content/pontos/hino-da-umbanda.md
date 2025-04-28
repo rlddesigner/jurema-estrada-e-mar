@@ -5,7 +5,7 @@ slug: "hino-da-umbanda"
 description: "Letra completa do Hino da Umbanda, entoado com fé nas aberturas de gira, exaltando a espiritualidade e o amor universal."
 image: "/imagens/hino-da-umbanda.jpg"
 categoria: "ponto"
-classe: "hino de louvor"
+classe: "hino-de-louvor"
 estilo: "bg-ponto"
 tags: ["hino da umbanda", "umbanda", "gira", "ponto de abertura", "espiritualidade", "louvor"]
 pubDate: "2025-04-23"
