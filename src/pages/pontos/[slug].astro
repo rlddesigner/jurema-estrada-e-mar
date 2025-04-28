@@ -48,7 +48,7 @@ const ultimosPontos = todosPontos
       <section class="ultimos-pontos">
         <h2>🎶 Últimos Pontos Cantados</h2>
          <div class="grade-oracoes home">
-        {pontosRecentes.map(({ data }) => (
+       {ultimosPontos.map(({ data }) => (
           <a href={`/pontos/${data.slug}`} class="card-oracao">
               {data.image && <img src={data.image} alt={data.title} />}
               <h3>{data.title}</h3>
