@@ -4,7 +4,7 @@ title: O que é Pombagira e como ela atua?
 slug: o-que-e-pombagira
 description: Conheça quem é Pombagira na Umbanda, sua missão espiritual e como ela atua na vida de quem a procura.
 image: /imagens/ensinamento-pombagira.jpg
-classe: "ensinamento-orixas"
+classe: "guias-falanges"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
