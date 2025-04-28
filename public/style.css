@@ -558,4 +558,43 @@ main.pagina-ensinamento article {
   color: #d73f09; /* Um laranja bonito ou pode trocar para a cor do seu tema */
   font-weight: bold;
 }
+.menu-categorias {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.menu-categorias h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.menu-categorias ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-categorias li {
+  margin: 0;
+}
+
+.menu-categorias a {
+  padding: 0.5rem 1rem;
+  background: #eee;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-categorias a:hover {
+  background: #d73f09;
+  color: #fff;
+}
 
