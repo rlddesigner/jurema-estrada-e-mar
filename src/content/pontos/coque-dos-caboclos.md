@@ -5,7 +5,7 @@ slug: "coque-dos-caboclos"
 description: "Letra e significado espiritual do ponto Coquê dos Caboclos, saudando a força e a proteção dos Caboclos na Umbanda."
 image: "/imagens/ponto-coque-dos-caboclos.jpg"
 categoria: "ponto"
-classe: "ponto de saudação"
+classe: "ponto-de-saudacao"
 estilo: "bg-ponto"
 tags: ["caboclos", "umbanda", "ponto de saudação", "força da natureza", "gira", "espiritualidade"]
 pubDate: "2025-04-25"
