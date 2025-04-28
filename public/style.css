@@ -669,13 +669,22 @@ main.pagina-ensinamento article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* novo */
   text-decoration: none;
   background: #fff;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   width: 200px;
+  height: 150px; /* novo */
   transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* novo */
+}
+
+.card-ponto h3 {
+  font-size: 1rem;
+  color: #5a3827;
+  margin: 0; /* remove margens extras do título */
 }
 
 .card-ponto img {
@@ -683,12 +692,6 @@ main.pagina-ensinamento article {
   height: auto;
   border-radius: 8px;
   margin-bottom: 0.5rem;
-}
-
-.card-ponto h3 {
-  font-size: 1rem;
-  color: #5a3827;
-  text-align: center;
 }
 
 .card-ponto:hover {
