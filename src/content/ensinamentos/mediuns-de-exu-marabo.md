@@ -4,7 +4,7 @@ title: "Médiuns de Exu Marabô: características e caminho espiritual"
 slug: "mediuns-de-exu-marabo"
 description: "Um olhar espiritual sobre as principais características dos médiuns que trabalham com Exu Marabô."
 image: "/imagens/ensinamento-mediuns-marabo.jpg"
-classe: "ensinamento-marabo"
+classe: "guias-falanges"
 categoria: "ensinamento"
 pubDate: "2025-04-23"
 seo:
