@@ -519,3 +519,43 @@ main.pagina-ensinamento article {
 .card-ponto:hover {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
+.menu-categorias {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.menu-categorias h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.menu-categorias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-categorias li {
+  margin-bottom: 0.75rem;
+}
+
+.menu-categorias a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.menu-categorias a:hover {
+  color: #000;
+  font-weight: 600;
+}
+
+.menu-categorias a.ativo {
+  color: #d73f09; /* Um laranja bonito ou pode trocar para a cor do seu tema */
+  font-weight: bold;
+}
+
