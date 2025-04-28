@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categorias = [
+    { slug: "saudacao" },
+    { slug: "demanda" },
+    { slug: "exu" },
+    { slug: "chegada" },
+    { slug: "subida" },
+    { slug: "cruzamento" },
+    { slug: "abertura" },
+    { slug: "encerramento" },
+  ];
+
+  return categorias.map((cat) => ({
+    params: { classe: cat.slug }
+  }));
+}
+
+const { params } = Astro;
+const { classe } = params;
+
+// Puxa todos os pontos cantados
+const pontos = await getCollection('pontos');
+
+// Filtra os pontos pela categoria (classe)
+const pontosFiltrados = pontos.filter((p) => p.data.classe === classe);
+---
+
+<Layout>
+  <section class="secao-pontos">
+    <h2>📻 Rádio Umbanda ao Vivo</h2>
+    <div class="player-radio">
+      <iframe 
+        src="https://player.maxcast.com.br/sandrocm"
+        width="100%"
+        height="100"
+        frameborder="0"
+        allow="autoplay"
+      ></iframe>
+    </div>
+
+    <div class="layout-pontos">
+      <!-- Coluna 1: Lista lateral (sempre igual) -->
+      <aside class="lista-lateral">
+        <h3>🎵 Categorias de Pontos</h3>
+        <ul>
+          <li><a href="/pontos/saudacao">🎵 Pontos de Saudação</a></li>
+          <li><a href="/pontos/demanda">🕯️ Pontos de Demanda</a></li>
+          <li><a href="/pontos/exu">🔴 Pontos de Exu</a></li>
+          <li><a href="/pontos/chegada">✨ Pontos de Chegada</a></li>
+          <li><a href="/pontos/subida">✨ Pontos de Subida</a></li>
+          <li><a href="/pontos/cruzamento">🔗 Pontos de Cruzamento</a></li>
+          <li><a href="/pontos/abertura">🚪 Pontos de Abertura</a></li>
+          <li><a href="/pontos/encerramento">🔚 Pontos de Encerramento</a></li>
+        </ul>
+      </aside>
+
+      <!-- Coluna 2: Cards filtrados pela classe -->
+      <div class="grade-pontos">
+        {pontosFiltrados.map(({ data }) => (
+          <a href={`/pontos/${data.slug}`} class="card-pontos">
+            <h3>{data.title}</h3>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
