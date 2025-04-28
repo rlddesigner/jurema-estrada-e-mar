@@ -5,7 +5,7 @@ slug: la-nas-praias-dos-lencois-tem-tres-maresias-faladas
 description: Um ponto que nos leva ao mistério encantado das praias dos Lençóis e ao encanto de Tóia Jarina, manifestação da natureza e da espiritualidade.
 image: /images/ponto-default.jpg
 categoria: ponto
-classe: Pontos de Chegada
+classe: "ponto-de-chegada"
 estilo: bg-ponto
 tags: ["encantaria", "praias", "toia jarina", "umbanda"]
 pubDate: 2025-04-27
