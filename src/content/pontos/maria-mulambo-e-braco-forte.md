@@ -5,7 +5,7 @@ slug: "maria-mulambo-e-braco-forte"
 description: "Letra e fundamento espiritual do ponto de Maria Mulambo, exaltando sua força na esquerda, domínio sobre as trevas e poder de transformação."
 image: "/imagens/ponto-maria-mulambo-braco-forte.jpg"
 categoria: "ponto"
-classe: "ponto de demanda"
+classe: "ponto-de-demanda"
 estilo: "bg-ponto"
 tags: ["pombagira", "maria mulambo", "ponto de demanda", "umbanda", "força espiritual", "proteção"]
 pubDate: "2025-04-25"
