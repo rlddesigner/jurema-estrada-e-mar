@@ -3,7 +3,7 @@ layout: null
 title: "Marabô das 7 Encruzilhadas: Guardião de Mistérios e Sabedorias"
 slug: "marabo-das-7-encruzilhadas"
 description: "Entenda quem é Marabô das 7 Encruzilhadas e por que ele às vezes se manifesta como Marabô Velho nos terreiros de Umbanda."
-image: "/ensinamentos/marabo-das-7-encruzilhadas.png"
+image: "/ensinamentos/marabo-das-7-encruzilhadas.webp"
 classe: "guias-falanges"
 categoria: "ensinamento"
 pubDate: "2025-04-27"
