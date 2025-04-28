@@ -52,7 +52,7 @@ const categorias = [
       <!-- Coluna 2: Cards de todos os pontos -->
       <div class="grade-oracoes home">
        {ultimosPontos.map(({ data }) => (
-          <a href={`/pontos/${data.slug}`} class="card-oracao">
+            <a href={`/pontos/${data.slug}`} class="card-oracao">
             <h3>{data.title}</h3>
           </a>
         ))}
