@@ -5,7 +5,7 @@ slug: ela-veio-de-tao-longe
 description: Um cântico que reverencia Tóia Jarina, filha do Rei Sebastião, trazendo a pureza das rosas e a força ancestral de sua linhagem espiritual.
 image: /images/pontos/ela-veio-de-tao-longe.jpg
 categoria: ponto
-classe: Pontos de Chegada
+classe: "pontos-de-chegada"
 estilo: bg-ponto
 tags: [Tóia Jarina, Rei Sebastião, rosas, chegada, ponto de luz, linha das águas, realeza espiritual]
 pubDate: 2025-04-27
