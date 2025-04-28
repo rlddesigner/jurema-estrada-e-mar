@@ -4,7 +4,7 @@ title: O que é Umbanda?
 slug: o-que-e-umbanda
 description: "Entenda a Umbanda de forma clara e espiritualizada: sua origem, fundamentos e propósito no mundo."
 image: /imagens/ensinamento-o-que-e-umbanda.jpg
-classe: "ensinamento-umbanda"
+classe: "fundamentos-conhecimentos"
 categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
