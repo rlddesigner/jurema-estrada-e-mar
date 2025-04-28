@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Pega o parâmetro da URL (por exemplo: ensinamento-praticas)
+const { params } = Astro;
+const { classe } = params;
+
+// Puxa todos os ensinamentos
+const ensinamentos = await getCollection('ensinamentos');
+
+// Filtra ensinamentos pela classe da URL
+const ensinamentosFiltrados = ensinamentos.filter((e) => e.data.classe === classe);
+
+// Lista manual de categorias
+const categorias = [
+  { nome: "Guias e Falanges", slug: "ensinamento-guias" },
+  { nome: "Práticas Espirituais", slug: "ensinamento-praticas" },
+  { nome: "Desenvolvimento Mediúnico", slug: "ensinamento-mediunidade" },
+  { nome: "Saberes e Mensagens", slug: "ensinamento-saberes" },
+];
+
+// Descobrir o nome da categoria atual
+const categoriaAtual = categorias.find((cat) => cat.slug === classe)?.nome || "Ensinamentos";
+---
+<Layout title={categoriaAtual} description="Saberes, práticas e guias espirituais da Umbanda.">
+  <main class="pagina-ensinamentos">
+
+    <aside class="menu-categorias">
+      <h2>Categorias</h2>
+      <ul>
+        {categorias.map((cat) => (
+          <li>
+            <a href={`/ensinamentos/${cat.slug}`} class={cat.slug === classe ? "ativo" : ""}>
+              {cat.nome}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+
+    <section class="conteudo-ensinamentos">
+      <h1>{categoriaAtual}</h1>
+
+      {ensinamentosFiltrados.length > 0 ? (
+        <div class="grade-oracoes">
+          {ensinamentosFiltrados.map(({ data }) => (
+            <a href={`/ensinamentos/${data.slug}`} class="card-oracao">
+              {data.image && <img src={data.image} alt={data.title} />}
+              <h3>{data.title}</h3>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <p>Nenhum ensinamento encontrado nessa categoria.</p>
+      )}
+    </section>
+
+  </main>
+</Layout>
