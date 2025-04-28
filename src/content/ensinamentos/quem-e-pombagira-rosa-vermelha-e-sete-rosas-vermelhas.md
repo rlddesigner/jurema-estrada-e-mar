@@ -3,7 +3,7 @@ layout: null
 title: "Quem é Pombagira Rosa Vermelha e Sete Rosas Vermelhas"
 slug: "quem-e-pombagira-rosa-vermelha-e-sete-rosas-vermelhas"
 description: "Entenda quem são Pombagira Rosa Vermelha e Pombagira Sete Rosas Vermelhas dentro da Umbanda, seus mistérios, suas forças e seus trabalhos espirituais."
-image: "/images/pombagira-rosa-vermelha.webp"
+image: "/imagens/pombagira-rosa-vermelha.webp"
 classe: "guias-falanges"
 categoria: "ensinamento"
 pubDate: "2025-04-27"
