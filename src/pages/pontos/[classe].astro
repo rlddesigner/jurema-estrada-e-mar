@@ -22,13 +22,13 @@ export async function getStaticPaths() {
 const { params } = Astro;
 const { classe } = params;
 
-// Puxa todos os pontos cantados
+// Pega todos os pontos
 const pontos = await getCollection('pontos');
 
-// Filtra os pontos pela categoria (classe)
+// Filtra pontos pela categoria (classe)
 const pontosFiltrados = pontos.filter((p) => p.data.classe === classe);
 
-// Categorias da sidebar
+// Lista das categorias para a sidebar
 const categorias = [
   { nome: "Pontos de Saudação", slug: "saudacao", emoji: "🎵" },
   { nome: "Pontos de Demanda", slug: "demanda", emoji: "🕯️" },
@@ -55,7 +55,7 @@ const categorias = [
     </div>
 
     <div class="layout-pontos">
-      <!-- Coluna 1: Sidebar -->
+      <!-- Sidebar de Categorias -->
       <aside class="lista-lateral">
         <h3>🎵 Categorias de Pontos</h3>
         <ul>
@@ -72,7 +72,7 @@ const categorias = [
         </ul>
       </aside>
 
-      <!-- Coluna 2: Cards filtrados -->
+      <!-- Grade de pontos filtrados -->
       <div class="grade-pontos">
         {pontosFiltrados.map(({ data }) => (
           <a href={`/pontos/${data.slug}`} class="card-pontos">
