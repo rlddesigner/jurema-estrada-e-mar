@@ -644,3 +644,54 @@ main.pagina-ensinamento article {
   font-weight: bold;
   text-decoration: underline;
 }
+.ultimos-pontos {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #fdf8f3;
+  border-radius: 12px;
+}
+
+.ultimos-pontos h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #6b4c36;
+  text-align: center;
+}
+
+.grade-pontos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card-ponto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-ponto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card-ponto h3 {
+  font-size: 1rem;
+  color: #5a3827;
+  text-align: center;
+}
+
+.card-ponto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
