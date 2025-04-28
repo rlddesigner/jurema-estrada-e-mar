@@ -632,3 +632,15 @@ main.pagina-ensinamento article {
   background-color: #c19168;
   transform: translateY(-3px);
 }
+.lista-lateral ul li a {
+  text-decoration: none;
+  color: #5a3827;
+  font-weight: 500;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.lista-lateral ul li a.ativo {
+  color: #d76d27; /* cor em destaque */
+  font-weight: bold;
+  text-decoration: underline;
+}
