@@ -4,7 +4,7 @@ title: O que acontece numa gira?
 slug: o-que-acontece-numa-gira
 description: Entenda o que é uma gira de Umbanda, como ela funciona e o que esperar ao participar desse momento espiritual.
 image: /imagens/ensinamento-o-que-acontece-numa-gira.jpg
-classe: "ensinamento-umbanda"
+classe: "fundamentos-conhecimentos"
 categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:
