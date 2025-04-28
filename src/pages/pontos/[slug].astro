@@ -3,15 +3,17 @@ import { getEntryBySlug, getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Seo from '../../components/Seo.astro';
 
+// Gera as rotas dinâmicas para cada ponto
 export async function getStaticPaths() {
-  const pontos = await getCollection('pontos');
+  const pontos = await getCollection('pontos'); // ✅ Plural
   return pontos.map((ponto) => ({
     params: { slug: ponto.slug },
-    props: { ponto } // ✅ passando ponto
+    props: { ponto } // ✅ Prop se chama ponto
   }));
 }
 
-const { ponto } = Astro.props; // ✅ pegando ponto
+// Pega o ponto atual
+const { ponto } = Astro.props; // ✅ Pegando ponto
 const { Content } = await ponto.render();
 const { title, description, image, seo } = ponto.data;
 
@@ -20,34 +22,28 @@ const seoTitle = seo?.title || title;
 const seoDescription = seo?.description || description;
 const url = `https://juremaestradaemar.netlify.app/pontos/${ponto.slug}`;
 
-// Últimos Pontos
-const todosPontos = await getCollection('pontos');
+// Pega todos os pontos para listar os últimos
+const todosPontos = await getCollection('pontos'); // ✅ Plural
+
 const ultimosPontos = todosPontos
   .filter((p) => p.slug !== ponto.slug)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
   .slice(0, 3);
 ---
-
-
-<Layout
-  title={title}
-  description={description}
->
-
-<!-- Adiciona o SEO dentro do Layout, na área do <head> -->
+<Layout title={title} description={description}>
   <head>
     <Seo title={seoTitle} description={seoDescription} url={url} image={image} />
   </head>
 
-  <main class={`pagina-oracao ${post.data.classe}`}>
-    {image && <img src={image} alt={title} class="capa-oracao" />}
+  <main class="pagina-ponto">
     <h1>{title}</h1>
 
-    <article class="conteudo-oracao">
+    {image && <img src={image} alt={title} class="capa-ponto" />}
+
+    <article class="conteudo-ponto">
       <Content />
     </article>
 
-  <!-- 🔗 Últimos Pontos Cantados -->
     {ultimosPontos.length > 0 && (
       <section class="ultimos-pontos">
         <h2>🎶 Últimos Pontos Cantados</h2>
