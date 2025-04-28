@@ -25,11 +25,13 @@ const ensinamentos = await getCollection('ensinamentos');
 
 const ensinamentosFiltrados = ensinamentos.filter((e) => e.data.classe === classe);
 
+// ATUALIZAÇÃO: categorias corretas
 const categorias = [
-  { nome: "Guias e Falanges", slug: "ensinamento-guias" },
-  { nome: "Práticas Espirituais", slug: "ensinamento-praticas" },
-  { nome: "Desenvolvimento Mediúnico", slug: "ensinamento-mediunidade" },
-  { nome: "Saberes e Mensagens", slug: "ensinamento-saberes" },
+  { nome: "Guias e Falanges", slug: "guias-falanges" },
+  { nome: "Práticas Espirituais", slug: "praticas-espirituais" },
+  { nome: "Desenvolvimento Mediúnico", slug: "desenvolvimento-mediunico" },
+  { nome: "Fundamentos e Conhecimentos", slug: "fundamentos-conhecimentos" },
+  { nome: "Orixás e Ancestralidade", slug: "orixas-ancestralidade" },
 ];
 
 const categoriaAtual = categorias.find((cat) => cat.slug === classe)?.nome || "Ensinamentos";
