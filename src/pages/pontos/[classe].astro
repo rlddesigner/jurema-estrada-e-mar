@@ -27,6 +27,18 @@ const pontos = await getCollection('pontos');
 
 // Filtra os pontos pela categoria (classe)
 const pontosFiltrados = pontos.filter((p) => p.data.classe === classe);
+
+// Categorias da sidebar
+const categorias = [
+  { nome: "Pontos de Saudação", slug: "saudacao", emoji: "🎵" },
+  { nome: "Pontos de Demanda", slug: "demanda", emoji: "🕯️" },
+  { nome: "Pontos de Exu", slug: "exu", emoji: "🔴" },
+  { nome: "Pontos de Chegada", slug: "chegada", emoji: "✨" },
+  { nome: "Pontos de Subida", slug: "subida", emoji: "✨" },
+  { nome: "Pontos de Cruzamento", slug: "cruzamento", emoji: "🔗" },
+  { nome: "Pontos de Abertura", slug: "abertura", emoji: "🚪" },
+  { nome: "Pontos de Encerramento", slug: "encerramento", emoji: "🔚" },
+];
 ---
 
 <Layout>
@@ -43,22 +55,24 @@ const pontosFiltrados = pontos.filter((p) => p.data.classe === classe);
     </div>
 
     <div class="layout-pontos">
-      <!-- Coluna 1: Lista lateral (sempre igual) -->
+      <!-- Coluna 1: Sidebar -->
       <aside class="lista-lateral">
         <h3>🎵 Categorias de Pontos</h3>
         <ul>
-          <li><a href="/pontos/saudacao">🎵 Pontos de Saudação</a></li>
-          <li><a href="/pontos/demanda">🕯️ Pontos de Demanda</a></li>
-          <li><a href="/pontos/exu">🔴 Pontos de Exu</a></li>
-          <li><a href="/pontos/chegada">✨ Pontos de Chegada</a></li>
-          <li><a href="/pontos/subida">✨ Pontos de Subida</a></li>
-          <li><a href="/pontos/cruzamento">🔗 Pontos de Cruzamento</a></li>
-          <li><a href="/pontos/abertura">🚪 Pontos de Abertura</a></li>
-          <li><a href="/pontos/encerramento">🔚 Pontos de Encerramento</a></li>
+          {categorias.map((cat) => (
+            <li>
+              <a 
+                href={`/pontos/${cat.slug}`} 
+                class={cat.slug === classe ? "ativo" : ""}
+              >
+                {cat.emoji} {cat.nome}
+              </a>
+            </li>
+          ))}
         </ul>
       </aside>
 
-      <!-- Coluna 2: Cards filtrados pela classe -->
+      <!-- Coluna 2: Cards filtrados -->
       <div class="grade-pontos">
         {pontosFiltrados.map(({ data }) => (
           <a href={`/pontos/${data.slug}`} class="card-pontos">
