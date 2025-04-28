@@ -3,7 +3,7 @@ layout: null
 title: "Quem é Raimunda Légua?"
 slug: "quem-e-raimunda-legua"
 description: "Conheça Raimunda Légua, filha de Velho Légua, espírito de grande sabedoria, simplicidade e força na Umbanda."
-image: "/ensinamentos/raimunda-legua.webp"
+image: "/imagens/raimunda-legua.webp"
 classe: "guias-falanges"
 categoria: "ensinamento"
 pubDate: "2025-04-27"
