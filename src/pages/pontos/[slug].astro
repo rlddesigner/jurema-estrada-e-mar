@@ -43,5 +43,20 @@ const url = `https://juremaestradaemar.netlify.app/pontos/${post.slug}`;
     <article class="conteudo-oracao">
       <Content />
     </article>
+
+  <!-- 🔗 Últimos Pontos Cantados -->
+    {ultimosPontos.length > 0 && (
+      <section class="ultimos-pontos">
+        <h2>🎶 Últimos Pontos Cantados</h2>
+        <div class="grade-pontos">
+          {ultimosPontos.map(({ data }) => (
+            <a href={`/pontos/${data.slug}`} class="card-ponto">
+              {data.image && <img src={data.image} alt={data.title} />}
+              <h3>{data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
   </main>
 </Layout>
