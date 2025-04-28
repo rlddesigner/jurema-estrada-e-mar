@@ -21,6 +21,12 @@ const seoDescription = seo?.description || description;
 
 // Gera a URL completa do post
 const url = `https://juremaestradaemar.netlify.app/ensinamentos/${post.slug}`;
+
+// 🔥 Adiciona para buscar relacionados:
+const todosEnsinamentos = await getCollection('ensinamentos');
+const relacionados = todosEnsinamentos
+  .filter((e) => e.data.classe === post.data.classe && e.slug !== post.slug)
+  .slice(0, 3); // mostra até 3 relacionados
 ---
 
 <Layout 
@@ -30,18 +36,33 @@ const url = `https://juremaestradaemar.netlify.app/ensinamentos/${post.slug}`;
   folhas={estilo === "folhas-caindo"}
 >
 
- <!-- Adiciona o SEO dentro do Layout, na área do <head> -->
+  <!-- Adiciona o SEO dentro do Layout, na área do <head> -->
   <head>
     <Seo title={seoTitle} description={seoDescription} url={url} image={image} />
   </head>
 
-<main class={`pagina-ensinamento ${post.data.classe}`}>
+  <main class={`pagina-ensinamento ${post.data.classe}`}>
     <h1>{title}</h1>
     {image && <img src={image} alt={title} class="capa-oracao" />}
     
-
     <article class="conteudo-oracao">
       <Content />
     </article>
+
+    <!-- 🔗 Seção de Ensinamentos Relacionados -->
+    {relacionados.length > 0 && (
+      <section class="ensinamentos-relacionados">
+        <h2>🔎 Você também pode gostar:</h2>
+        <div class="grade-relacionados">
+          {relacionados.map((rel) => (
+            <a href={`/ensinamentos/${rel.slug}`} class="card-relacionado">
+              {rel.data.image && <img src={rel.data.image} alt={rel.data.title} />}
+              <h3>{rel.data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
   </main>
 </Layout>
