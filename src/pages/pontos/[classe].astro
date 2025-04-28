@@ -1,0 +1,85 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categorias = [
+    { slug: "saudacao" },
+    { slug: "demanda" },
+    { slug: "exu" },
+    { slug: "chegada" },
+    { slug: "subida" },
+    { slug: "cruzamento" },
+    { slug: "abertura" },
+    { slug: "encerramento" },
+  ];
+
+  return categorias.map((cat) => ({
+    params: { classe: cat.slug }
+  }));
+}
+
+const { params } = Astro;
+const { classe } = params;
+
+// Pega todos os pontos
+const pontos = await getCollection('pontos');
+
+// Filtra pontos pela categoria (classe)
+const pontosFiltrados = pontos.filter((p) => p.data.classe === classe);
+
+// Lista das categorias para a sidebar
+const categorias = [
+  { nome: "Pontos de Saudação", slug: "saudacao", emoji: "🎵" },
+  { nome: "Pontos de Demanda", slug: "demanda", emoji: "🕯️" },
+  { nome: "Pontos de Exu", slug: "exu", emoji: "🔴" },
+  { nome: "Pontos de Chegada", slug: "chegada", emoji: "✨" },
+  { nome: "Pontos de Subida", slug: "subida", emoji: "✨" },
+  { nome: "Pontos de Cruzamento", slug: "cruzamento", emoji: "🔗" },
+  { nome: "Pontos de Abertura", slug: "abertura", emoji: "🚪" },
+  { nome: "Pontos de Encerramento", slug: "encerramento", emoji: "🔚" },
+];
+---
+
+<Layout>
+  <section class="secao-pontos">
+    <h2>📻 Rádio Umbanda ao Vivo</h2>
+    <div class="player-radio">
+      <iframe 
+        src="https://player.maxcast.com.br/sandrocm"
+        width="100%"
+        height="100"
+        frameborder="0"
+        allow="autoplay"
+      ></iframe>
+    </div>
+
+    <div class="layout-pontos">
+      <!-- Sidebar de Categorias -->
+      <aside class="lista-lateral">
+        <h3>🎵 Categorias de Pontos</h3>
+        <ul>
+          {categorias.map((cat) => (
+            <li>
+              <a 
+                href={`/pontos/${cat.slug}`} 
+                class={cat.slug === classe ? "ativo" : ""}
+              >
+                {cat.emoji} {cat.nome}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <!-- Grade de pontos filtrados -->
+      <div class="grade-pontos">
+        {pontosFiltrados.map(({ data }) => (
+          <a href={`/pontos/${data.slug}`} class="card-pontos">
+            <h3>{data.title}</h3>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
