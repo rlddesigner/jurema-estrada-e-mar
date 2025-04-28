@@ -15,11 +15,12 @@ const { ponto } = Astro.props;
 const { Content } = await ponto.render();
 const { title, description, image, seo } = ponto.data;
 
+// Configurações de SEO
 const seoTitle = seo?.title || title;
 const seoDescription = seo?.description || description;
 const url = `https://juremaestradaemar.netlify.app/pontos/${ponto.slug}`;
 
-// 🔥 AQUI adiciona para pegar últimos pontos
+// 🔥 Aqui criamos o ultimosPontos corretamente
 const todosPontos = await getCollection('pontos');
 
 const ultimosPontos = todosPontos
@@ -27,38 +28,31 @@ const ultimosPontos = todosPontos
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
   .slice(0, 3);
 ---
-
-<Layout
-  title={title}
-  description={description}
->
-
-<!-- Adiciona o SEO dentro do Layout, na área do <head> -->
+<Layout title={title} description={description}>
   <head>
     <Seo title={seoTitle} description={seoDescription} url={url} image={image} />
   </head>
 
-  <main class={`pagina-oracao ${post.data.classe}`}>
-    {image && <img src={image} alt={title} class="capa-oracao" />}
+  <main class="pagina-ponto">
     <h1>{title}</h1>
+    {image && <img src={image} alt={title} class="capa-ponto" />}
 
-    <article class="conteudo-oracao">
+    <article class="conteudo-ponto">
       <Content />
     </article>
 
-<!-- 🔥 AQUI você coloca os Últimos Pontos -->
-  {ultimosPontos.length > 0 && (
-    <section class="ultimos-pontos">
-      <h2>🎶 Últimos Pontos Cantados</h2>
-      <div class="grade-pontos">
-        {ultimosPontos.map(({ data }) => (
-          <a href={`/pontos/${data.slug}`} class="card-ponto">
-            {data.image && <img src={data.image} alt={data.title} />}
-            <h3>{data.title}</h3>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
+    {ultimosPontos.length > 0 && (
+      <section class="ultimos-pontos">
+        <h2>🎶 Últimos Pontos Cantados</h2>
+        <div class="grade-pontos">
+          {ultimosPontos.map(({ data }) => (
+            <a href={`/pontos/${data.slug}`} class="card-ponto">
+              {data.image && <img src={data.image} alt={data.title} />}
+              <h3>{data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
   </main>
 </Layout>
