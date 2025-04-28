@@ -1,27 +1,31 @@
 ---
 import { getEntryBySlug, getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import Seo from '../../components/Seo.astro'; // 👈 importa o componente SEO aqui
+import Seo from '../../components/Seo.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('pontos');
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post }
+  const pontos = await getCollection('pontos');
+  return pontos.map((ponto) => ({
+    params: { slug: ponto.slug },
+    props: { ponto }
   }));
 }
 
-const { post } = Astro.props;
-const { Content } = await post.render();
-const { title, description, image, estilo, seo } = post.data;
+const { ponto } = Astro.props;
+const { Content } = await ponto.render();
+const { title, description, image, seo } = ponto.data;
 
-// Se tiver campos "seo.title" e "seo.description", usa eles. Se não, usa os normais.
 const seoTitle = seo?.title || title;
 const seoDescription = seo?.description || description;
+const url = `https://juremaestradaemar.netlify.app/pontos/${ponto.slug}`;
 
+// 🔥 AQUI adiciona para pegar últimos pontos
+const todosPontos = await getCollection('pontos');
 
-// Gera a URL completa do post
-const url = `https://juremaestradaemar.netlify.app/pontos/${post.slug}`;
+const ultimosPontos = todosPontos
+  .filter((p) => p.slug !== ponto.slug)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 3);
 ---
 
 <Layout 
