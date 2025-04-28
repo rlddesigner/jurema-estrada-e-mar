@@ -5,7 +5,7 @@ slug: "se-eu-pegar-seu-ze-pelintra"
 description: "Letra e significado do ponto de demanda para Seu Zé Pelintra, trazendo força espiritual, justiça e proteção contra injustiças nas giras de Umbanda."
 image: "/imagens/ponto-seu-ze-pelintra.jpg"
 categoria: "ponto"
-classe: "ponto de demanda"
+classe: "ponto-de-demanda"
 estilo: "bg-ponto"
 tags: ["zé pelintra", "ponto de demanda", "umbanda", "proteção espiritual", "justiça", "gira de esquerda"]
 pubDate: "2025-04-26"
