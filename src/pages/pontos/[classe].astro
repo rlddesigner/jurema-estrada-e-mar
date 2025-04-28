@@ -4,14 +4,14 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const categorias = [
-    { slug: "saudacao" },
-    { slug: "demanda" },
-    { slug: "exu" },
-    { slug: "chegada" },
-    { slug: "subida" },
-    { slug: "cruzamento" },
-    { slug: "abertura" },
-    { slug: "encerramento" },
+    { slug: "ponto-de-saudacao" },
+    { slug: "ponto-de-demanda" },
+    { slug: "ponto-de-exu" },
+    { slug: "ponto-de-chegada" },
+    { slug: "ponto-de-subida" },
+    { slug: "ponto-de-cruzamento" },
+    { slug: "ponto-de-abertura" },
+    { slug: "ponto-de-encerramento" },
   ];
 
   return categorias.map((cat) => ({
