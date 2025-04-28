@@ -49,7 +49,7 @@ const ultimosPontos = todosPontos
         <h2>🎶 Últimos Pontos Cantados</h2>
          <div class="grade-oracoes home">
        {ultimosPontos.map(({ data }) => (
-          <a href={`/pontos/${data.slug}`} class="card-oracao">
+            <a href={`/pontos/${data.slug}`} class="card-oracao">
               {data.image && <img src={data.image} alt={data.title} />}
               <h3>{data.title}</h3>
             </a>
