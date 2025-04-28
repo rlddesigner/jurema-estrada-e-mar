@@ -22,6 +22,14 @@ const seoDescription = seo?.description || description;
 
 // Gera a URL completa do post
 const url = `https://juremaestradaemar.netlify.app/pontos/${post.slug}`;
+
+// 🔥 AQUI cria o ultimosPontos
+const todosPontos = await getCollection('pontos');
+
+const ultimosPontos = todosPontos
+  .filter((p) => p.slug !== ponto.slug)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 3);
 ---
 
 <Layout
