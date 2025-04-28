@@ -4,7 +4,7 @@ title: Nesta Casa Tem uma Rosa
 slug: nesta-casa-tem-uma-rosa
 description: Um ponto que reverencia a beleza espiritual e a força encantadora das águas e das flores sagradas.
 categoria: ponto
-classe: Pontos de Chegada
+classe: "ponto-de-chegada"
 estilo: bg-ponto
 tags: ["toia-jarina", "umbanda", "força-das-águas", "chegada"]
 pubDate: 2025-04-27
