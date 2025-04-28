@@ -2,21 +2,45 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
+// Puxa todos os ensinamentos
 const ensinamentos = await getCollection('ensinamentos');
 
-// Organiza do mais recente pro mais antigo
+// Organiza do mais recente para o mais antigo
 const ensinamentosRecentes = ensinamentos
   .filter((e) => e.data.pubDate)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
----
 
+// Lista manual das categorias
+const categorias = [
+  { nome: "Guias e Falanges", slug: "ensinamento-guias" },
+  { nome: "Práticas Espirituais", slug: "ensinamento-praticas" },
+  { nome: "Desenvolvimento Mediúnico", slug: "ensinamento-mediunidade" },
+  { nome: "Saberes e Mensagens", slug: "ensinamento-saberes" },
+];
+---
 <Layout 
   title="Ensinamentos Espirituais"
   description="Reflexões, fundamentos e sabedorias da Umbanda, compartilhados com amor e axé."
 >
   <main class="pagina-lista">
+
+    <!-- 🧭 Menu de Categorias -->
+    <section class="menu-categorias">
+      <h2>🌿 Escolha uma Categoria</h2>
+      <ul>
+        {categorias.map((cat) => (
+          <li>
+            <a href={`/ensinamentos/${cat.slug}`}>
+              {cat.nome}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- 📚 Lista de Ensinamentos Recentes -->
     <section class="secao-home">
-      <h1>📘 Ensinamentos Espirituais</h1>
+      <h2>📘 Todos os Ensinamentos</h2>
       <div class="grade-ensinamentos">
         {ensinamentosRecentes.map(({ data }) => (
           <a href={`/ensinamentos/${data.slug}`} class="card-oracao">
@@ -27,5 +51,6 @@ const ensinamentosRecentes = ensinamentos
         ))}
       </div>
     </section>
+
   </main>
 </Layout>
