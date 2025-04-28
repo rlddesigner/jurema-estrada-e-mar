@@ -10,6 +10,10 @@ export async function getStaticPaths() {
     { slug: "desenvolvimento-mediunico" },
     { slug: "fundamentos-conhecimentos" },
     { slug: "orixas-ancestralidade" },
+    { slug: "incorporacao-desenvolvimento" },
+    { slug: "rituais-firmezas" },
+    { slug: "saberes-umbanda" },
+    { slug: "caminhada-espiritual" },
   ];
 
   return categorias.map((cat) => ({
@@ -25,13 +29,17 @@ const ensinamentos = await getCollection('ensinamentos');
 
 const ensinamentosFiltrados = ensinamentos.filter((e) => e.data.classe === classe);
 
-// ATUALIZAÇÃO: categorias corretas
+// Lista de categorias atualizada
 const categorias = [
   { nome: "Guias e Falanges", slug: "guias-falanges" },
   { nome: "Práticas Espirituais", slug: "praticas-espirituais" },
   { nome: "Desenvolvimento Mediúnico", slug: "desenvolvimento-mediunico" },
   { nome: "Fundamentos e Conhecimentos", slug: "fundamentos-conhecimentos" },
   { nome: "Orixás e Ancestralidade", slug: "orixas-ancestralidade" },
+  { nome: "Incorporação e Desenvolvimento", slug: "incorporacao-desenvolvimento" },
+  { nome: "Rituais e Firmezas", slug: "rituais-firmezas" },
+  { nome: "Saberes de Umbanda", slug: "saberes-umbanda" },
+  { nome: "Caminhada Espiritual", slug: "caminhada-espiritual" },
 ];
 
 const categoriaAtual = categorias.find((cat) => cat.slug === classe)?.nome || "Ensinamentos";
