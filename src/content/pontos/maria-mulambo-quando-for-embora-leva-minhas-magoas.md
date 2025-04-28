@@ -4,7 +4,7 @@ title: Maria Mulambo quando for embora leva minhas mágoas
 slug: maria-mulambo-quando-for-embora-leva-minhas-magoas
 description: Um ponto de limpeza e cura, entregando a Maria Mulambo todas as dores, mágoas e medos, para que sejam transmutados em luz.
 categoria: ponto
-classe: Pontos de Subida
+classe: "ponto-de-subida"
 estilo: bg-ponto
 tags: ["maria mulambo", "exu", "cura", "limpeza", "umbanda"]
 pubDate: 2025-04-27
