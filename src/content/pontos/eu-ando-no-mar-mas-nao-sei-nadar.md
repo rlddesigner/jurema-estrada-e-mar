@@ -4,7 +4,7 @@ title: Eu Ando no Mar, Mas Não Sei Nadar
 slug: eu-ando-no-mar-mas-nao-sei-nadar
 description: Um ponto de fé e confiança em Pomba Gira Maria Mulambo, que resgata seus filhos mesmo nas tormentas emocionais mais profundas.
 categoria: ponto
-classe: Pontos de Proteção
+classe: "pontos-de-protecao"
 estilo: bg-ponto
 tags: ["pomba gira", "maria mulambo", "proteção", "umbanda"]
 pubDate: 2025-04-27
