@@ -10,15 +10,20 @@ const ensinamentosRecentes = ensinamentos
   .filter((e) => e.data.pubDate)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 
-// Lista manual das categorias
+// Categorias atualizadas
 const categorias = [
   { nome: "Guias e Falanges", slug: "guias-falanges" },
   { nome: "Práticas Espirituais", slug: "praticas-espirituais" },
   { nome: "Desenvolvimento Mediúnico", slug: "desenvolvimento-mediunico" },
   { nome: "Fundamentos e Conhecimentos", slug: "fundamentos-conhecimentos" },
   { nome: "Orixás e Ancestralidade", slug: "orixas-ancestralidade" },
+  { nome: "Incorporação e Desenvolvimento", slug: "incorporacao-desenvolvimento" },
+  { nome: "Rituais e Firmezas", slug: "rituais-firmezas" },
+  { nome: "Saberes de Umbanda", slug: "saberes-umbanda" },
+  { nome: "Caminhada Espiritual", slug: "caminhada-espiritual" },
 ];
 ---
+
 <Layout 
   title="Ensinamentos Espirituais"
   description="Reflexões, fundamentos e sabedorias da Umbanda, compartilhados com amor e axé."
