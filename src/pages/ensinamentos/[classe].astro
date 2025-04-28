@@ -5,10 +5,11 @@ import { getCollection } from 'astro:content';
 // getStaticPaths: define quais rotas serão criadas
 export async function getStaticPaths() {
   const categorias = [
-    { slug: "ensinamento-guias" },
-    { slug: "ensinamento-praticas" },
-    { slug: "ensinamento-mediunidade" },
-    { slug: "ensinamento-saberes" },
+    { slug: "guias-falanges" },
+    { slug: "praticas-espirituais" },
+    { slug: "desenvolvimento-mediunico" },
+    { slug: "fundamentos-conhecimentos" },
+    { slug: "orixas-ancestralidade" },
   ];
 
   return categorias.map((cat) => ({
