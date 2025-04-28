@@ -4,7 +4,7 @@ title: Como montar um altar de Umbanda em casa
 slug: como-montar-altar-umbanda
 description: Aprenda como montar um altar de Umbanda em casa com fundamento, respeito e conexão espiritual.
 image: /imagens/ensinamento-altar-umbanda.jpg
-classe: "ensinamento-conexao"
+classe: "praticas-espirituais"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:
