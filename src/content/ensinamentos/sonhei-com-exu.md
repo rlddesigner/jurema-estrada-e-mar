@@ -4,7 +4,7 @@ title: Sonhei com Exu — o que pode significar?
 slug: sonhei-com-exu
 description: Entenda o significado espiritual de sonhar com Exu e como interpretar esse chamado com respeito e consciência.
 image: /imagens/ensinamento-sonho-exu.jpg
-classe: "ensinamento-espiritualidade"
+classe: "guias-falanges"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:

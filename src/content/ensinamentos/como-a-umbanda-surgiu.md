@@ -5,7 +5,7 @@ slug: "como-a-umbanda-surgiu"
 description: "Entenda a origem da Umbanda, sua manifestação espiritual e os fundamentos do seu nascimento."
 image: "/imagens/ensinamento-origem-umbanda.jpg"
 pubDate: "2025-04-23"
-classe: "ensinamento-origem-umbanda"
+classe: "fundamentos-conhecimentos"
 categoria: "ensinamento"
 estilo: ""
 seo:

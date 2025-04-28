@@ -4,7 +4,7 @@ title: O que fazer com oferendas depois que passam dias?
 slug: o-que-fazer-com-oferendas-depois
 description: Aprenda como lidar com as oferendas após o tempo de firmeza, com respeito, fundamento e conexão com a espiritualidade.
 image: /imagens/ensinamento-oferendas-destino.jpg
-classe: "ensinamento-fundamentos"
+classe: "praticas-espirituais"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:

@@ -4,7 +4,7 @@ title: Como saber se tenho mediunidade?
 slug: como-saber-se-tenho-mediunidade
 description: Entenda os sinais mais comuns do despertar mediúnico e como reconhecer a sensibilidade espiritual dentro de você.
 image: /imagens/ensinamento-mediunidade.jpg
-classe: "ensinamento-mediunidade"
+classe: "desenvolvimento-mediunico"
 categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:

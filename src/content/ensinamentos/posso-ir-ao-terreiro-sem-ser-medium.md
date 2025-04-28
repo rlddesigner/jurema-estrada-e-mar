@@ -4,7 +4,7 @@ title: Posso ir ao terreiro mesmo sem ser médium?
 slug: posso-ir-ao-terreiro-sem-ser-medium
 description: Descubra por que qualquer pessoa pode ir ao terreiro de Umbanda, mesmo sem ter mediunidade ou compromisso com a religião.
 image: /imagens/ensinamento-ir-ao-terreiro-sem-ser-medium.jpg
-classe: "ensinamento-umbanda"
+classe: "desenvolvimento-mediunico"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:

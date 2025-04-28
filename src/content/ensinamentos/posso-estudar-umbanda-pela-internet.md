@@ -4,7 +4,7 @@ title: Posso estudar Umbanda pela internet?
 slug: posso-estudar-umbanda-pela-internet
 description: Entenda se é possível estudar sobre a Umbanda pela internet, como filtrar os conteúdos com sabedoria e quando a espiritualidade pode usar a tecnologia para te ensinar.
 image: /imagens/ensinamento-estudo-umbanda-internet.jpg
-classe: "ensinamento-caminho"
+classe: "desenvolvimento-mediunico"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:

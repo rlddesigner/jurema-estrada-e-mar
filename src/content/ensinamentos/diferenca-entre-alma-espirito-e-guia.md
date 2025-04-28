@@ -4,7 +4,7 @@ title: Diferença entre alma, espírito e guia
 slug: diferenca-entre-alma-espirito-e-guia
 description: Entenda de forma clara e espiritualizada o que é alma, o que é espírito e o que são os guias na Umbanda.
 image: /imagens/ensinamento-alma-espirito-guia.jpg
-classe: "ensinamento-conhecimento"
+classe: "fundamentos-conhecimentos"
 categoria: "ensinamento"
 pubDate: 2025-04-24
 seo:

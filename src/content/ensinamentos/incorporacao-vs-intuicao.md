@@ -4,7 +4,7 @@ title: Qual a diferença entre incorporação e intuição?
 slug: incorporacao-vs-intuicao
 description: Entenda de forma clara e espiritualizada a diferença entre intuição e incorporação mediúnica.
 image: /imagens/ensinamento-incorporacao-intuicao.jpg
-classe: "ensinamento-mediunidade"
+classe: "desenvolvimento-mediunico"
 categoria: "ensinamento"
 pubDate: 2025-04-23
 seo:

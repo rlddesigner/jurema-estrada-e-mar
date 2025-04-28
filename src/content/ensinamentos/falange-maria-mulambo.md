@@ -4,7 +4,7 @@ title: Entenda a Falange de Maria Mulambo na Umbanda
 slug: falange-maria-mulambo
 description: Descubra o que é uma falange espiritual, como trabalham os guias de Maria Mulambo e quantas linhas existem dentro dessa força feminina de luz.
 image: /imagens/ensinamento-falange-maria-mulambo.webp
-classe: "ensinamento-linhas"
+classe: "guias-falanges"
 pubDate: 2025-04-27
 seo:
   title: "Falange de Maria Mulambo: Entenda sua força e mistérios"
