@@ -5,7 +5,7 @@ slug: "iansa-tem-um-leque-de-pena"
 description: "Letra e significado do ponto cantado de saudação a Iansã e Xangô, celebrando a força dos ventos e a justiça divina na Umbanda."
 image: "/imagens/ponto-iansa-leque-de-pena.jpg"
 categoria: "ponto"
-classe: "ponto de saudação"
+classe: "ponto-de-saudacao"
 estilo: "bg-ponto"
 tags: ["iansã", "xangô", "ponto de saudação", "ventos", "justiça", "orixás", "gira"]
 pubDate: "2025-04-26"
