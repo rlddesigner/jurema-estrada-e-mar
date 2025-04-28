@@ -2,17 +2,28 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-// Pega o parâmetro da URL (por exemplo: ensinamento-praticas)
+// getStaticPaths: define quais rotas serão criadas
+export async function getStaticPaths() {
+  const categorias = [
+    { slug: "ensinamento-guias" },
+    { slug: "ensinamento-praticas" },
+    { slug: "ensinamento-mediunidade" },
+    { slug: "ensinamento-saberes" },
+  ];
+
+  return categorias.map((cat) => ({
+    params: { classe: cat.slug }
+  }));
+}
+
+// Dentro da página normal
 const { params } = Astro;
 const { classe } = params;
 
-// Puxa todos os ensinamentos
 const ensinamentos = await getCollection('ensinamentos');
 
-// Filtra ensinamentos pela classe da URL
 const ensinamentosFiltrados = ensinamentos.filter((e) => e.data.classe === classe);
 
-// Lista manual de categorias
 const categorias = [
   { nome: "Guias e Falanges", slug: "ensinamento-guias" },
   { nome: "Práticas Espirituais", slug: "ensinamento-praticas" },
@@ -20,9 +31,9 @@ const categorias = [
   { nome: "Saberes e Mensagens", slug: "ensinamento-saberes" },
 ];
 
-// Descobrir o nome da categoria atual
 const categoriaAtual = categorias.find((cat) => cat.slug === classe)?.nome || "Ensinamentos";
 ---
+
 <Layout title={categoriaAtual} description="Saberes, práticas e guias espirituais da Umbanda.">
   <main class="pagina-ensinamentos">
 
